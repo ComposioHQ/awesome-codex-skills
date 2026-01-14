@@ -79,27 +79,52 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [create-plan/](./create-plan/) - Quickly draft concise execution plans for coding tasks.
 - [gh-address-comments/](./gh-address-comments/) - Address review or issue comments on the open GitHub PR for the current branch using `gh`.
 - [gh-fix-ci/](./gh-fix-ci/) - Inspect failing GitHub Actions checks, summarize failures, and propose fixes.
+- [mcp-builder/](./mcp-builder/) - Build and evaluate MCP servers with best practices and an evaluation harness.
+- [webapp-testing/](./webapp-testing/) - Run targeted web app tests and summarize results.
 
 ### Productivity & Collaboration
 
+- [connect/](./connect/) - Connect Codex to 1000+ apps via Composio for real actions (Slack, GitHub, Notion, etc.).
+- [connect-apps/](./connect-apps/) - Quickly wire up Composio app connections for actions and workflows.
 - [linear/](./linear/) - Manage issues, projects, and team workflows in Linear.
+- [meeting-insights-analyzer/](./meeting-insights-analyzer/) - Analyze meeting transcripts for themes, risks, and follow-ups.
 - [meeting-notes-and-actions/](./meeting-notes-and-actions/) - Turn meeting transcripts into summaries with decisions and owner-tagged action items.
+- [internal-comms/](./internal-comms/) - Craft internal announcements, updates, and stakeholder messaging.
+- [invoice-organizer/](./invoice-organizer/) - Normalize and extract invoice data for tracking and reporting.
 - [notion-knowledge-capture/](./notion-knowledge-capture/) - Convert chats or notes into structured Notion pages with proper linking.
 - [notion-meeting-intelligence/](./notion-meeting-intelligence/) - Prepare meeting materials with Notion context plus Codex research.
 - [notion-research-documentation/](./notion-research-documentation/) - Synthesize multiple Notion sources into briefs, comparisons, or reports with citations.
 - [notion-spec-to-implementation/](./notion-spec-to-implementation/) - Turn Notion specs into implementation plans, tasks, and progress tracking.
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
+- [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
+- [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
 
 ### Communication & Writing
 
 - [email-draft-polish/](./email-draft-polish/) - Draft, rewrite, or condense emails for the right tone and audience.
+- [changelog-generator/](./changelog-generator/) - Create clear changelogs from commits or summaries.
+- [content-research-writer/](./content-research-writer/) - Research and draft content with sourced citations.
+- [tailored-resume-generator/](./tailored-resume-generator/) - Tailor resumes to job descriptions with quantified impact.
 
 ### Data & Analysis
 
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
+- [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
+- [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
+- [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
+- [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
+- [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
+- [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
 
 ### Meta & Utilities
 
+- [brand-guidelines/](./brand-guidelines/) - Apply OpenAI/Codex brand colors and typography to artifacts.
+- [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
+- [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
+- [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
+- [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
+- [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
+- [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
 
