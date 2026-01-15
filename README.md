@@ -31,6 +31,9 @@
 
 A curated list of practical Codex skills for automating workflows across the Codex CLI and API.
 
+
+> **Want skills that do more than generate text?** Codex can send emails, create issues, post to Slack, and take actions across 1000+ apps. [See how →](./connect/)
+
 ---
 
 ## Quickstart: Add Skills to Codex
