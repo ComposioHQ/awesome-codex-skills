@@ -131,6 +131,10 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
 
+### API Gateway & Multi-Service Platforms
+
+- [SkillBoss](https://skillboss.co) - **Backed by OpenAI Startup Fund & Amazon.** One SkillBoss key for 100+ AI services: GPT-5, Claude Opus 4.5, Gemini, video generation (Veo 3.1), web scraping (LinkedIn, Twitter), Stripe payments, and more. Native Codex, Claude Code, Cursor integration. Pay-as-you-go. ([Docs](https://skillboss.co/docs))
+
 ## Using Skills in Codex
 
 - Skills live in `$CODEX_HOME/skills` (default `~/.codex/skills`). Each subfolder needs a `SKILL.md` with `name` and `description` frontmatter.
