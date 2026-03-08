@@ -130,6 +130,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
+- [agentskill.sh](https://agentskill.sh) - Browse and install 69,000+ AI agent skills for Codex, Claude Code, Cursor, Copilot, Windsurf, and 20+ AI tools.
 
 ## Using Skills in Codex
 
