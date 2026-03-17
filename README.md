@@ -101,6 +101,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
+- [a2a-collaboration/](./a2a-collaboration/) - Enable standardized Agent-to-Agent (A2A) communication and cross-framework collaboration.
 
 ### Communication & Writing
 
