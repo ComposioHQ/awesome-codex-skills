@@ -18,11 +18,11 @@ With this skill, Codex can:
 
 ## Enabling A2A for Codex
 
-To turn Codex into a stateful A2A service, use the [Codex-A2A](https://github.com/liujuanjuan1984/codex-a2a).
+To enable full A2A Protocol support for Codex, use the [Codex-A2A](https://github.com/liujuanjuan1984/codex-a2a).
 
-### 1. Setup the A2A Server
+### 1. Setup the A2A Implementation
 
-Clone and run the adapter that bridges Codex to A2A interfaces:
+Clone and run the A2A implementation that bridges Codex to A2A interfaces:
 
 ```bash
 git clone https://github.com/liujuanjuan1984/codex-a2a.git
