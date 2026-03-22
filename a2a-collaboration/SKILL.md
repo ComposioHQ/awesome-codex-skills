@@ -18,15 +18,15 @@ With this skill, Codex can:
 
 ## Enabling A2A for Codex
 
-To turn Codex into a stateful A2A service, use the [Codex-A2A-Server](https://github.com/liujuanjuan1984/codex-a2a-server).
+To turn Codex into a stateful A2A service, use the [Codex-A2A](https://github.com/liujuanjuan1984/codex-a2a).
 
 ### 1. Setup the A2A Server
 
 Clone and run the adapter that bridges Codex to A2A interfaces:
 
 ```bash
-git clone https://github.com/liujuanjuan1984/codex-a2a-server.git
-cd codex-a2a-server
+git clone https://github.com/liujuanjuan1984/codex-a2a.git
+cd codex-a2a
 # Follow installation steps in their repository
 python -m pip install -r requirements.txt
 python main.py
