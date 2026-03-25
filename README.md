@@ -101,6 +101,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
+- [product-manager-skills](https://github.com/Digidai/product-manager-skills) - Senior PM agent with 6 knowledge domains, 30+ frameworks, 32 SaaS metrics with formulas, 12 templates, and anti-pattern detection. Pure Markdown.
 
 ### Communication & Writing
 
