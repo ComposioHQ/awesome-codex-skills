@@ -83,6 +83,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [gh-address-comments/](./gh-address-comments/) - Address review or issue comments on the open GitHub PR for the current branch using `gh`.
 - [gh-fix-ci/](./gh-fix-ci/) - Inspect failing GitHub Actions checks, summarize failures, and propose fixes.
 - [mcp-builder/](./mcp-builder/) - Build and evaluate MCP servers with best practices and an evaluation harness.
+- [moyu/](./moyu/) - Anti-over-engineering skill that constrains AI to write minimal, reviewable code. Benchmarked at 66% less output.
 - [webapp-testing/](./webapp-testing/) - Run targeted web app tests and summarize results.
 
 ### Productivity & Collaboration
