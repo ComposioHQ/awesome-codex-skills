@@ -129,6 +129,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
+- [tokrepo-search/](./tokrepo-search/) - Search and install AI assets from TokRepo, including Codex skills, MCP servers, prompts, cursor rules, and workflows.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
 
 ## Using Skills in Codex
