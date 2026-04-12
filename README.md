@@ -115,6 +115,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
 - [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
+- [research-loop/](./research-loop/) - Run a Codex-native autonomous research loop over a GitHub research repo with source-gated mentor critique, submission-advisor reflection, bounded execution, and GitHub delivery.
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
