@@ -125,6 +125,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
+- [fabbo-ai/fabbo-ai-generator](https://github.com/fabbo-ai/fabbo-ai-generator) - Generate AI videos and images on [fabbo.ai](https://fabbo.ai) from Codex by driving a real Playwright browser session. Supports text-to-video, image-to-video, text-to-image, reference-to-video, and image editing across Veo, Sora, Kling, Wan, Luma, Runway, Midjourney, and Nano Banana. *By [@fabbo-ai](https://github.com/fabbo-ai)*
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
