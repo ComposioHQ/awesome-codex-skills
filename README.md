@@ -112,6 +112,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 ### Data & Analysis
 
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
+- [tax-transaction-classifier/](./tax-transaction-classifier/) - Classify bank statement transactions into tax categories and produce accountant-ready working papers. *Inspired by [OpenAccountants](https://github.com/openaccountants/openaccountants).*
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
 - [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
