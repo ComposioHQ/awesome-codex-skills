@@ -87,6 +87,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [mcp-builder/](./mcp-builder/) - Build and evaluate MCP servers with best practices and an evaluation harness.
 - [webapp-testing/](./webapp-testing/) - Run targeted web app tests and summarize results.
 - [AuraKit](https://github.com/smorky850612/Aurakit) - All-in-one skill framework: 46 modes, 23 sub-agents, 6-layer OWASP security, 10 lifecycle hooks, ~55% token savings. Install: `npx @smorky85/aurakit`
+- [vara-skills](https://github.com/gear-foundation/vara-skills) - 21 skills for shipping Rust smart contracts on Vara Network with the Gear/Sails framework. Full pipeline: spec → Sails impl → gtest → on-chain deploy via `vara-wallet`. Covers IDL codegen, React frontend, and event-driven indexer. Ships as Codex install script via `bash scripts/install-codex-skills.sh`.
 
 ### Productivity & Collaboration
 
