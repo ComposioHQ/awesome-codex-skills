@@ -100,6 +100,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [notion-spec-to-implementation/](./notion-spec-to-implementation/) - Turn Notion specs into implementation plans, tasks, and progress tracking.
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
+- [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
 
 ### Communication & Writing
