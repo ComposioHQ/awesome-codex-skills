@@ -141,6 +141,8 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
+- [skill-health-monitor](https://github.com/aptratcn/skill-health-monitor) - Automated health checks for AI agent skill collections. Audit, score, and maintain 10+ skills with structured 5-dimension scoring (0-100 points).
+- [token-budget-guard](https://github.com/aptratcn/token-budget-guard) - Token budget management for AI agents. Progressive disclosure, conversation compression, budget monitoring. 99% context savings.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
 
