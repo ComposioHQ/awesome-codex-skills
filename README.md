@@ -1,7 +1,7 @@
 <h1 align="center">Awesome Codex Skills</h1>
 
 <p align="center">
-<a href="https://platform.composio.dev/?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeCodexSkills">
+<a href="https://dashboard.composio.dev/login?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeCodexSkills">
 
   <img width="1280" height="640" alt="Composio banner" src="codex_cover_image.png">
 </a>
@@ -59,6 +59,7 @@ The installer fetches the skill and places it in `$CODEX_HOME/skills/<skill-name
 
 ## Contents
 
+- [Bernstein](https://github.com/chernistry/bernstein) - Multi-agent orchestrator with Codex CLI adapter. Runs parallel Codex agents in isolated git worktrees with quality gates.
 - [What Are Codex Skills?](#what-are-codex-skills)
 - [Skills](#skills)
   - [Development & Code Tools](#development--code-tools)
@@ -79,16 +80,27 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Development & Code Tools
 
+- [brooks-lint](https://github.com/hyhmrright/brooks-lint) - AI code reviews grounded in twelve classic engineering books — decay risk diagnostics with book citations, severity labels, and six analysis modes (PR review, architecture audit, tech debt, test quality, health dashboard, full-sweep auto-fix). Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo hyhmrright/brooks-lint --path skills/brooks-lint --name brooks-lint`
+- [codebase-migrate/](./codebase-migrate/) - Run large codebase migrations and multi-file refactors in reviewable batches with CI verification.
+- [codebase-recon](https://github.com/yujiachen-y/codebase-recon-skill) - Analyze git history to understand a codebase before reading any code — surfaces hotspots, bug magnets, bus factor, momentum, and high-risk files (hotspot ∩ bug-magnet) via auto-scaled analysis. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo yujiachen-y/codebase-recon-skill --path skills/codebase-recon --name codebase-recon`
 - [create-plan/](./create-plan/) - Quickly draft concise execution plans for coding tasks.
+- [deploy-pipeline/](./deploy-pipeline/) - End-to-end Stripe → Supabase → Vercel release pipelines with verify and rollback.
+- [Emdash Skills](https://github.com/megabytespace/claude-skills) - 14-category autonomous product-building OS: CF Workers + Hono + Angular + D1 + Stripe. One-line prompts to deployed SaaS with 94 reference docs, 18 agents, and Codex-native `.agents/skills/` support.
 - [gh-address-comments/](./gh-address-comments/) - Address review or issue comments on the open GitHub PR for the current branch using `gh`.
 - [gh-fix-ci/](./gh-fix-ci/) - Inspect failing GitHub Actions checks, summarize failures, and propose fixes.
+- [logic-lens](https://github.com/hyhmrright/logic-lens) - Logic-first code review via semi-formal execution tracing — surfaces behavioral bugs, semantic errors, and runtime failures that linters miss, with L1–L6 risk codes. Six skills: logic-review, logic-explain, logic-diff, logic-locate, logic-health, and logic-fix-all (autonomous audit-and-fix pipeline). Supports Claude Code, Codex CLI, and Gemini CLI. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo hyhmrright/logic-lens --path skills/logic-review --name logic-review`
 - [mcp-builder/](./mcp-builder/) - Build and evaluate MCP servers with best practices and an evaluation harness.
+- [pr-review-ci-fix/](./pr-review-ci-fix/) - Automated GitHub/GitLab PR review plus CI auto-fix loop via the Composio CLI.
+- [sentry-triage/](./sentry-triage/) - Diagnose Sentry issues by mapping stack frames to local source — no copy-paste.
 - [webapp-testing/](./webapp-testing/) - Run targeted web app tests and summarize results.
+- [AuraKit](https://github.com/smorky850612/Aurakit) - All-in-one skill framework: 46 modes, 23 sub-agents, 6-layer OWASP security, 10 lifecycle hooks, ~55% token savings. Install: `npx @smorky85/aurakit`
+- [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) - Governed Codex skill harness for staged, test-driven work: routes 340+ skills through requirement freeze, plan approval, execution, verification evidence, and cross-session memory.
 
 ### Productivity & Collaboration
 
-- [connect/](./connect/) - Connect Codex to 1000+ apps via Composio for real actions (Slack, GitHub, Notion, etc.).
-- [connect-apps/](./connect-apps/) - Quickly wire up Composio app connections for actions and workflows.
+- [connect/](./connect/) - Connect Codex to 1000+ apps via the Composio CLI for real actions (Slack, GitHub, Notion, etc.).
+- [connect-apps/](./connect-apps/) - Wire up Composio CLI connections for Claude and kick off app workflows from the shell.
+- [issue-triage/](./issue-triage/) - Triage Linear or Jira backlogs and run bug sweeps from the terminal.
 - [linear/](./linear/) - Manage issues, projects, and team workflows in Linear.
 - [meeting-insights-analyzer/](./meeting-insights-analyzer/) - Analyze meeting transcripts for themes, risks, and follow-ups.
 - [meeting-notes-and-actions/](./meeting-notes-and-actions/) - Turn meeting transcripts into summaries with decisions and owner-tagged action items.
@@ -100,6 +112,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [notion-spec-to-implementation/](./notion-spec-to-implementation/) - Turn Notion specs into implementation plans, tasks, and progress tracking.
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
+- [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
 
 ### Communication & Writing
@@ -107,21 +120,25 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [email-draft-polish/](./email-draft-polish/) - Draft, rewrite, or condense emails for the right tone and audience.
 - [changelog-generator/](./changelog-generator/) - Create clear changelogs from commits or summaries.
 - [content-research-writer/](./content-research-writer/) - Research and draft content with sourced citations.
+- [novel-writing](https://github.com/wgwtest/novel-writing) - External repo: public Codex skill for fiction planning, chapter drafting, scene continuation, and revision.
 - [tailored-resume-generator/](./tailored-resume-generator/) - Tailor resumes to job descriptions with quantified impact.
 
 ### Data & Analysis
 
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
+- [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
 - [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
 - [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
+- [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.
 
 ### Meta & Utilities
 
 - [brand-guidelines/](./brand-guidelines/) - Apply OpenAI/Codex brand colors and typography to artifacts.
+- [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
@@ -166,7 +183,7 @@ Clear instructions and steps for Codex to execute the task.
 Best practices:
 
 - Keep the `description` exhaustive about when to trigger; keep the body focused on execution steps.
-- Use progressive disclosure: put detailed references in `references/` and call them out from `SKILL.md` only when needed.
+- Use progressive disclosure: put detailed references in `references/` and load them only when needed.
 - Include scripts for repeatable or deterministic operations; mention when Codex should run them.
 - Avoid extra docs (README, changelog) inside the skill folder to keep context lean.
 
@@ -187,7 +204,7 @@ PRs welcome. Add real, reusable skills, keep descriptions precise, and include a
 </p>
 
 <p align="center">
-  <a href="https://platform.composio.dev/?utm_source=Github&utm_content=AwesomeCodexSkills">
+  <a href="https://dashboard.composio.dev/login?utm_source=Github&utm_content=AwesomeCodexSkills">
     <img src="https://img.shields.io/badge/Get_Started_Free-4F46E5?style=for-the-badge" alt="Get Started"/>
   </a>
 </p>
