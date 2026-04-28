@@ -209,3 +209,5 @@ PRs welcome. Add real, reusable skills, keep descriptions precise, and include a
     <img src="https://img.shields.io/badge/Get_Started_Free-4F46E5?style=for-the-badge" alt="Get Started"/>
   </a>
 </p>
+
+- [MeterCall](https://metercall.ai/?v=c&src=github) — One metered API gateway. 21M+ endpoints (payments, SMS, AI, CRMs, gov data). Free tier; pay per call.
