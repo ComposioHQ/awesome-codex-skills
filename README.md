@@ -80,7 +80,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Development & Code Tools
 
-- [brooks-lint](https://github.com/hyhmrright/brooks-lint) - AI code reviews grounded in six classic engineering books — decay risk diagnostics with book citations, severity labels, and four analysis modes (PR review, architecture audit, tech debt, test quality). Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo hyhmrright/brooks-lint --path skills/brooks-lint --name brooks-lint`
+- [brooks-lint](https://github.com/hyhmrright/brooks-lint) - AI code reviews grounded in twelve classic engineering books — decay risk diagnostics with book citations, severity labels, and six analysis modes (PR review, architecture audit, tech debt, test quality, health dashboard, full-sweep auto-fix). Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo hyhmrright/brooks-lint --path skills/brooks-lint --name brooks-lint`
 - [codebase-migrate/](./codebase-migrate/) - Run large codebase migrations and multi-file refactors in reviewable batches with CI verification.
 - [codebase-recon](https://github.com/yujiachen-y/codebase-recon-skill) - Analyze git history to understand a codebase before reading any code — surfaces hotspots, bug magnets, bus factor, momentum, and high-risk files (hotspot ∩ bug-magnet) via auto-scaled analysis. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo yujiachen-y/codebase-recon-skill --path skills/codebase-recon --name codebase-recon`
 - [create-plan/](./create-plan/) - Quickly draft concise execution plans for coding tasks.
@@ -88,6 +88,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [Emdash Skills](https://github.com/megabytespace/claude-skills) - 14-category autonomous product-building OS: CF Workers + Hono + Angular + D1 + Stripe. One-line prompts to deployed SaaS with 94 reference docs, 18 agents, and Codex-native `.agents/skills/` support.
 - [gh-address-comments/](./gh-address-comments/) - Address review or issue comments on the open GitHub PR for the current branch using `gh`.
 - [gh-fix-ci/](./gh-fix-ci/) - Inspect failing GitHub Actions checks, summarize failures, and propose fixes.
+- [logic-lens](https://github.com/hyhmrright/logic-lens) - Logic-first code review via semi-formal execution tracing — surfaces behavioral bugs, semantic errors, and runtime failures that linters miss, with L1–L6 risk codes. Six skills: logic-review, logic-explain, logic-diff, logic-locate, logic-health, and logic-fix-all (autonomous audit-and-fix pipeline). Supports Claude Code, Codex CLI, and Gemini CLI. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo hyhmrright/logic-lens --path skills/logic-review --name logic-review`
 - [mcp-builder/](./mcp-builder/) - Build and evaluate MCP servers with best practices and an evaluation harness.
 - [pr-review-ci-fix/](./pr-review-ci-fix/) - Automated GitHub/GitLab PR review plus CI auto-fix loop via the Composio CLI.
 - [sentry-triage/](./sentry-triage/) - Diagnose Sentry issues by mapping stack frames to local source — no copy-paste.
