@@ -105,6 +105,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [meeting-notes-and-actions/](./meeting-notes-and-actions/) - Turn meeting transcripts into summaries with decisions and owner-tagged action items.
 - [internal-comms/](./internal-comms/) - Craft internal announcements, updates, and stakeholder messaging.
 - [invoice-organizer/](./invoice-organizer/) - Normalize and extract invoice data for tracking and reporting.
+- [feishu-inout](https://github.com/joe960913/feishu-inout) - Lark/Feishu docs, messaging, calendar & bitable integration for AI coding agents. Zero dependencies, official MCP.
 - [notion-knowledge-capture/](./notion-knowledge-capture/) - Convert chats or notes into structured Notion pages with proper linking.
 - [notion-meeting-intelligence/](./notion-meeting-intelligence/) - Prepare meeting materials with Notion context plus Codex research.
 - [notion-research-documentation/](./notion-research-documentation/) - Synthesize multiple Notion sources into briefs, comparisons, or reports with citations.
