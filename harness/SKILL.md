@@ -1,5 +1,5 @@
 ---
-name: codex-harness
+name: harness
 description: "A meta-skill for designing a specialized subagent team in the Codex CLI environment. Domain analysis → Agent TOML definitions (.codex/agents/) → Skill creation (.codex/skills/) → AGENTS.md initialization. Triggers: 'set up codex harness', 'create codex agent team', 'build codex harness', '{domain} codex automation'. Also use this skill for follow-up tasks (modification/refinement/re-execution/expansion)."
 ---
 

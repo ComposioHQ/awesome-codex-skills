@@ -1,6 +1,6 @@
-# Use Cases: codex-harness Trigger Utterance → Processing Path Catalog
+# Use Cases: harness Trigger Utterance → Processing Path Catalog
 
-A catalog of **8 practical utterance patterns** and the processing path for each utterance (mode branching → pattern selection → workflow.md structure → artifacts) when calling `codex-harness` to build, extend, or operate a harness. Use this as a reference by matching the closest scenario when a new domain is received.
+A catalog of **8 practical utterance patterns** and the processing path for each utterance (mode branching → pattern selection → workflow.md structure → artifacts) when calling `harness` to build, extend, or operate a harness. Use this as a reference by matching the closest scenario when a new domain is received.
 
 > **Reading order:** §1 Utterance → Mode mapping → §2 8 Scenarios (by domain) → §3 Non-trigger utterances (false-positive prevention) → §4 Phase application guide.
 
@@ -8,7 +8,7 @@ A catalog of **8 practical utterance patterns** and the processing path for each
 
 ## 1. Utterance → Mode Mapping
 
-`codex-harness` branches into a mode at Phase 0 immediately after the trigger (see SKILL.md Phase 0). Mode by utterance pattern:
+`harness` branches into a mode at Phase 0 immediately after the trigger (see SKILL.md Phase 0). Mode by utterance pattern:
 
 | Utterance Pattern                                                               | Mode                   | Entry Phase                                            | Representative Keywords                                |
 | ----------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------- | ------------------------------------------ |
@@ -149,7 +149,7 @@ A catalog of **8 practical utterance patterns** and the processing path for each
 
 ## 3. Non-Trigger Utterances (False-Positive Prevention)
 
-The following utterances **do not call codex-harness**. Respond directly or call another skill.
+The following utterances **do not call harness**. Respond directly or call another skill.
 
 | Utterance                               | Reason                              | Handling                                                                               |
 | ---------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------- |
