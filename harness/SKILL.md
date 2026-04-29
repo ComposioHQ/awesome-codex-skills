@@ -1,6 +1,6 @@
 ---
-name: harness
-description: "A meta-skill for designing a specialized subagent team in the Codex CLI environment. Domain analysis → Agent TOML definitions (.codex/agents/) → Skill creation (.agents/skills/) → AGENTS.md initialization. Triggers: 'set up codex harness', 'create codex agent team', 'build codex harness', '{domain} codex automation'. Also use this skill for follow-up tasks (modification/refinement/re-execution/expansion)."
+name: codex-harness
+description: "A meta-skill for designing a specialized subagent team in the Codex CLI environment. Domain analysis → Agent TOML definitions (.codex/agents/) → Skill creation (.codex/skills/) → AGENTS.md initialization. Triggers: 'set up codex harness', 'create codex agent team', 'build codex harness', '{domain} codex automation'. Also use this skill for follow-up tasks (modification/refinement/re-execution/expansion)."
 ---
 
 # Skill: Codex Harness Orchestrator
@@ -11,7 +11,7 @@ description: "A meta-skill for designing a specialized subagent team in the Code
 
 1. **7 Architecture Patterns:** Pipeline · Fan-out/Fan-in · Expert Pool · Producer-Reviewer · Supervisor · Hierarchical · Handoff
 2. **Agent Definition:** TOML format — `.codex/agents/{name}.toml`
-3. **Skill Format:** SKILL.md — `.agents/skills/{name}/SKILL.md`
+3. **Skill Format:** SKILL.md — `.codex/skills/{name}/SKILL.md`
 4. **Project Context:** `AGENTS.md` — Path hierarchy: global `~/.codex/AGENTS.md` → repo `AGENTS.md` → subdirectory (more specific file takes precedence). Short and precise files are better than long and vague ones.
 5. **State Persistence:** `_workspace/` file-based brokering
 6. **Permission Control:** TOML `sandbox_mode` field — `read-only | workspace-write | danger-full-access`
@@ -70,7 +70,7 @@ PROCEDURE plan_mode(user_request):
 
 ### Phase 0: Status Audit (Mode Branching)
 
-Check for the existence of `.codex/agents/`, `.agents/skills/`, `AGENTS.md`, `_workspace/checkpoint.json`:
+Check for the existence of `.codex/agents/`, `.codex/skills/`, `AGENTS.md`, `_workspace/checkpoint.json`:
 
 | State                         | Mode          | Entry Phase                              |
 | ----------------------------- | ------------- | ---------------------------------------- |
@@ -91,14 +91,17 @@ Check for the existence of `.codex/agents/`, `.agents/skills/`, `AGENTS.md`, `_w
 2. Select pattern (see `references/agent-design-patterns.md`).
 3. Determine `sandbox_mode` for each agent:
 
-   | Agent Type              | sandbox_mode         | Rationale                                                               |
-   | ----------------------- | -------------------- | ----------------------------------------------------------------------- |
-   | Researcher / Analyst    | `read-only`          | File reading and web research only, no writes                           |
-   | Architect / Planner     | `read-only`          | Reports design output to findings.md only (orchestrator writes for it)  |
-   | Coder / Developer       | `workspace-write`    | Directly creates and modifies code and documentation files              |
-   | Reviewer / QA Inspector | `workspace-write`    | Creates report files + runs tests                                       |
-   | State Manager           | `workspace-write`    | CRUD on checkpoint, task, and findings files                            |
-   | Operator / Deployer     | `danger-full-access` | Executes external processes such as kubectl, terraform, etc.            |
+   | Agent Type                              | sandbox_mode         | Rationale                                                                                         |
+   | --------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------- |
+   | Researcher / Analyst                    | `read-only`          | File reading and web research only, no writes                                                     |
+   | Architect / Planner *(consultative)*    | `read-only`          | Returns analysis/opinion as text only — orchestrator captures output and writes to findings.md    |
+   | Architect / Planner *(document-producing)* | `workspace-write` | Directly writes design docs (architecture.md, plan.md, etc.) to `_workspace/{plan_name}/`        |
+   | Coder / Developer                       | `workspace-write`    | Directly creates and modifies code and documentation files                                        |
+   | Reviewer / QA Inspector                 | `workspace-write`    | Creates report files + runs tests                                                                 |
+   | State Manager                           | `workspace-write`    | CRUD on checkpoint, task, and findings files                                                      |
+   | Operator / Deployer                     | `danger-full-access` | Executes external processes such as kubectl, terraform, etc.                                      |
+
+   > **Architect/Planner mode selection:** Use `read-only` (consultative) when the orchestrator instructs "analyze and return opinion." Use `workspace-write` (document-producing) when the orchestrator instructs "write the design doc to `_workspace/`." **Never assign `read-only` to an agent whose prompt says to write files** — this will silently fail.
 
 4. **Subagent constraint check:** Agents other than the orchestrator must not spawn subagents.
 
@@ -114,14 +117,14 @@ Required fields: `name`, `description`, `developer_instructions`, `model`, `sand
 
 ### Phase 4: Procedure Skill Creation
 
-Write `.agents/skills/{orchestrator-name}/SKILL.md`. Reference: `references/schemas/agent-orchestrator.template.md`.
+Write `.codex/skills/{orchestrator-name}/SKILL.md`. Reference: `references/schemas/agent-orchestrator.template.md`.
 
-Bundle schema files: Copy all 9 schemas from `references/schemas/` → `.agents/skills/{name}/references/schemas/`.
+Bundle schema files: Copy all 10 items from `references/schemas/` → `.codex/skills/{name}/references/schemas/` (9 schemas + `state.py`).
 
 ### Phase 5: Integration and Orchestration
 
 1. Create `_workspace/`, `_workspace/{plan_name}/`, `_workspace/tasks/`, `_workspace/_schemas/`.
-2. Schema sync: Copy all 9 schemas from `references/schemas/` → `_workspace/_schemas/`.
+2. Schema sync: Copy all 9 schemas from `references/schemas/` → `_workspace/_schemas/`. Also copy `references/schemas/state.py` → `_workspace/state.py` (separate destination — callable as `python _workspace/state.py`).
 3. Write `workflow.md` — Stage-Step structure, 6 required fields, verifiable exit conditions.
 4. Initialize `findings.md` (sections by pattern).
 5. Initialize `tasks.md`.
@@ -131,20 +134,23 @@ Bundle schema files: Copy all 9 schemas from `references/schemas/` → `.agents/
    ```markdown
    ## Harness: {plan_name}
 
+   > **Entry point:** Always invoke `@{orchestrator-agent}` first. It loads `.codex/skills/{orchestrator-name}/SKILL.md` and spawns worker subagents per workflow.md. Direct `@worker` calls without the orchestrator are prohibited.
+
+   - Orchestrator: `.codex/agents/{orchestrator-agent}.toml` + `.codex/skills/{orchestrator-name}/SKILL.md`
    - Agents: {agent list + .codex/agents/ paths}
-   - Skills: {skill list + .agents/skills/ paths}
-   - Workflow: \_workspace/workflow.md
-   - Checkpoint: \_workspace/checkpoint.json
+   - Workflow: `_workspace/workflow.md`
+   - Checkpoint: `_workspace/checkpoint.json`
    ```
 
 ### Phase 6: Validation
 
 - [ ] `.codex/agents/*.toml` required fields complete (name, description, developer_instructions, model, sandbox_mode, model_reasoning_effort)
-- [ ] `.agents/skills/*/SKILL.md` frontmatter name and description validated
+- [ ] `.codex/skills/*/SKILL.md` frontmatter name and description validated
 - [ ] workflow.md schema validated (6 required fields + verifiable exit conditions, no natural language)
 - [ ] workflow.md cycle check
 - [ ] `_workspace/_schemas/` all 9 files present
-- [ ] `AGENTS.md` harness section added
+- [ ] `_workspace/state.py` exists and executable (`python _workspace/state.py --help`)
+- [ ] `AGENTS.md` harness section added — includes orchestrator entry point, skill path, agent list, workflow/checkpoint paths
 - [ ] `checkpoint.json` status is `in_progress`
 
 ## Pattern-based Codex Coordination
@@ -166,11 +172,13 @@ Based on Codex subagent spawn. Default parallel execution — sequential executi
 ```
 {project}/
 ├── .codex/
-│   ├── agents/{name}.toml              # Agent definition (TOML)
+│   └── agents/{name}.toml              # Agent definition (TOML)
+├── .agents/
 │   └── skills/{orchestrator}/
 │       ├── SKILL.md
-│       └── references/schemas/         # Schema copies (9 files)
+│       └── references/schemas/         # Schema copies (10 items: 9 schemas + state.py)
 ├── _workspace/
+│   ├── state.py                        # State manager CLI (token-efficient reads/writes)
 │   ├── _schemas/
 │   ├── workflow.md
 │   ├── findings.md
@@ -191,4 +199,5 @@ Zero-Tolerance: Agent failure → maximum 2 retries → if unresolved, set task\
 - `references/orchestrator-template.md` — Step 0~5 pseudocode (Codex version)
 - `references/schemas/models.md` — Model ID source of truth (OpenAI)
 - `references/schemas/agent-worker.template.toml` — Worker agent TOML reference
-- `references/schemas/` — Runtime schema SoT (9 files)
+- `references/schemas/state.py` — State manager CLI source (deployed to `_workspace/state.py` at init)
+- `references/schemas/` — Runtime schema SoT (9 schemas + state.py = 10 items total)

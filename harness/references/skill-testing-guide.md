@@ -86,7 +86,7 @@ For each test prompt, invoke two sub-agents **in parallel within a single respon
 ```
 Invoke @tester-with-skill
   Prompt: "{test prompt}"
-  Skill path specified: .agents/skills/{skill-name}/
+  Skill path specified: .codex/skills/{skill-name}/
   Output path: _workspace/{skill-name}/iteration-N/eval-{id}/with_skill/outputs/
 ```
 
@@ -312,7 +312,7 @@ Write 20 eval queries — 10 should-trigger + 10 should-NOT-trigger.
 
 Confirm that the new skill's description does not overlap with the trigger area of existing skills.
 
-1. Collect descriptions from the existing skill list (scan all `.agents/skills/*/SKILL.md` via shell `find` and shell `cat`).
+1. Collect descriptions from the existing skill list (scan all `.codex/skills/*/SKILL.md` via shell `find` and shell `cat`).
 2. Confirm that the new skill's should-trigger queries do not incorrectly trigger existing skills.
 3. If a conflict is found, describe the **boundary conditions** in the description more clearly (explicitly state the differentiating points from similar skills).
 

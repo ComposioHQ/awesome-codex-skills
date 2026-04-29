@@ -1,6 +1,6 @@
-# Use Cases: harness Trigger Utterance → Processing Path Catalog
+# Use Cases: codex-harness Trigger Utterance → Processing Path Catalog
 
-A catalog of **8 practical utterance patterns** and the processing path for each utterance (mode branching → pattern selection → workflow.md structure → artifacts) when calling `harness` to build, extend, or operate a harness. Use this as a reference by matching the closest scenario when a new domain is received.
+A catalog of **8 practical utterance patterns** and the processing path for each utterance (mode branching → pattern selection → workflow.md structure → artifacts) when calling `codex-harness` to build, extend, or operate a harness. Use this as a reference by matching the closest scenario when a new domain is received.
 
 > **Reading order:** §1 Utterance → Mode mapping → §2 8 Scenarios (by domain) → §3 Non-trigger utterances (false-positive prevention) → §4 Phase application guide.
 
@@ -8,7 +8,7 @@ A catalog of **8 practical utterance patterns** and the processing path for each
 
 ## 1. Utterance → Mode Mapping
 
-`harness` branches into a mode at Phase 0 immediately after the trigger (see SKILL.md Phase 0). Mode by utterance pattern:
+`codex-harness` branches into a mode at Phase 0 immediately after the trigger (see SKILL.md Phase 0). Mode by utterance pattern:
 
 | Utterance Pattern                                                               | Mode                   | Entry Phase                                            | Representative Keywords                                |
 | ----------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------- | ------------------------------------------ |
@@ -149,7 +149,7 @@ A catalog of **8 practical utterance patterns** and the processing path for each
 
 ## 3. Non-Trigger Utterances (False-Positive Prevention)
 
-The following utterances **do not call harness**. Respond directly or call another skill.
+The following utterances **do not call codex-harness**. Respond directly or call another skill.
 
 | Utterance                               | Reason                              | Handling                                                                               |
 | ---------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------- |
@@ -167,7 +167,7 @@ The following utterances **do not call harness**. Respond directly or call anoth
 
 | Mode          | Phases Executed                                                 | Key Artifacts                                                                                                                                               |
 | ------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| New Build     | Phase 1 ~ Phase 6 (full)                                   | `.codex/agents/*.toml`, `.agents/skills/{orchestrator}/SKILL.md`, `AGENTS.md`, `_workspace/_schemas/`, workflow.md, findings.md, tasks.md, checkpoint.json |
+| New Build     | Phase 1 ~ Phase 6 (full)                                   | `.codex/agents/*.toml`, `.codex/skills/{orchestrator}/SKILL.md`, `AGENTS.md`, `_workspace/_schemas/`, workflow.md, findings.md, tasks.md, checkpoint.json |
 | Existing Extension     | Determined by expansion-matrix.md matrix (typically Phase 2·3·5·6-6) | Changed files only + `AGENTS.md` change history                                                                                                  |
 | Operations/Maintenance | Phase 0 → evolution-protocol.md                            | Audit report + drift corrections                                                                                                                  |
 | Partial Re-run   | Phase 0 (checkpoint rewind) → from Phase 2                  | Affected artifacts only                                                                                                                         |

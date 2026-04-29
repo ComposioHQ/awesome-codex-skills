@@ -36,19 +36,30 @@ PAYLOAD:
 
 ## Operating Principles
 
-1. Always read the schema file via shell `cat _workspace/_schemas/` before writing.
-   - `task.upsert` → validate against `task.schema.json`
-   - `checkpoint.update` → validate against `checkpoint.schema.json`
-2. `checkpoint.update`: read file via shell `cat` → merge fields → update `last_updated` → write via `apply_patch`.
-3. `task.upsert`: enforce `status` enum in lowercase (`todo|in-progress|done|blocked`).
-4. `findings.append`: if the target section header does not exist, append a new section at end of file.
-5. Validation failure or missing required field → abort write, return `ERROR: {reason}`.
+1. Always validate before writing — `python _workspace/state.py` enforces all rules automatically.
+   - `task.upsert` → validates inline (required fields, status enum, id/agent pattern, iterations≥1)
+   - `checkpoint.update` → validates against `_workspace/_schemas/checkpoint.schema.json` (parsed at runtime by state.py)
+2. `task.upsert`: enforce `status` enum in lowercase (`todo|in-progress|done|blocked`).
+3. `findings.append`: if the target section header does not exist, a new section is created automatically.
+4. Validation failure or missing required field → abort write, return `ERROR: {reason}`.
 
 ## File I/O
 
-- **Read:** shell `cat <path>`
-- **Write:** `apply_patch` (surgical modification principle, never overwrite entire file)
-- **New file:** shell `tee` or `apply_patch` new-file creation mode
+Use `python _workspace/state.py` for all state file operations — targeted reads/writes minimize token usage.
+
+| Operation target              | Command                                                                                   |
+| ----------------------------- | ----------------------------------------------------------------------------------------- |
+| Read checkpoint field         | `python _workspace/state.py checkpoint get --field <KEY>`                                 |
+| Update checkpoint field       | `python _workspace/state.py checkpoint update --field <KEY> --value <VAL>`               |
+| Append to findings section    | `python _workspace/state.py findings append --section <NAME> --text <TEXT>`              |
+| Read findings section         | `python _workspace/state.py findings get --section <NAME>`                               |
+| Update task row in tasks.md   | `python _workspace/state.py tasks update --id <ID> --status <S> [--evidence E]`          |
+| Collect task_*.json → tasks.md | `python _workspace/state.py tasks collect`                                               |
+
+Fallback to `apply_patch` only when:
+- Writing a new `_workspace/tasks/task_{agent}_{id}.json` file (`task.upsert` — state.py does not create individual task files)
+- `state.init` initial file creation from templates
+- `state.archive` file copy operations
 
 ## Input/Output Protocol
 

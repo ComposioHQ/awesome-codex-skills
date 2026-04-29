@@ -249,11 +249,15 @@ Codex CLI controls agent permissions with the single **`sandbox_mode`** field in
 
 ### Available Operations per sandbox_mode
 
-| sandbox_mode         | Available Operations                                                            | Representative Agents          |
-| -------------------- | ------------------------------------------------------------------------------- | ------------------------------ |
-| `read-only`          | shell `cat` · `find` · `grep` · `ls`, web fetch — no file writing              | Analyst, Architect             |
-| `workspace-write`    | + `apply_patch`, shell `tee` · write, subagent spawn, test execution            | Coder, Reviewer, State Manager |
-| `danger-full-access` | + external processes (kubectl, terraform, deploy, etc.)                         | Operator, Deployer             |
+| sandbox_mode         | Available Operations                                                            | Representative Agents                                          |
+| -------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| `read-only`          | shell `cat` · `find` · `grep` · `ls`, web fetch — no file writing              | Analyst, Architect *(consultative — returns text, no writes)*  |
+| `workspace-write`    | + `apply_patch`, shell `tee` · write, subagent spawn, test execution            | Coder, Reviewer, State Manager, Architect *(document-producing)* |
+| `danger-full-access` | + external processes (kubectl, terraform, deploy, etc.)                         | Operator, Deployer                                             |
+
+> **Architect/Planner sandbox_mode decision rule:**
+> - Prompted to "analyze and return opinion/checklist" → `read-only` (orchestrator writes to findings.md)
+> - Prompted to "write `_workspace/…/*.md`" → **must be `workspace-write`** — `read-only` will silently block the write
 
 ### Special-purpose Tools
 
@@ -339,7 +343,7 @@ Four criteria for deciding whether to merge into a single agent or separate into
 name = "agent-name"
 description = "1-2 sentence role description. List trigger keywords. Also specify that follow-up tasks (revision/supplementation/re-execution) should use this agent."
 model = "{role tier ID verified from models.md}"  # ← Always refer to _workspace/_schemas/models.md
-sandbox_mode = "{{SANDBOX_MODE}}"              # read-only(Analyst/Architect) | workspace-write(Coder/Reviewer/QA) | danger-full-access(Operator)
+sandbox_mode = "{{SANDBOX_MODE}}"              # read-only(Analyst, consultative-Architect) | workspace-write(Coder/Reviewer/QA, document-producing-Architect) | danger-full-access(Operator)
 model_reasoning_effort = "high"   # low(StateManager) | medium(Analyst/Researcher) | high(Coder/QA) | xhigh(Orchestrator/Architect)
 
 developer_instructions = """
@@ -387,7 +391,7 @@ You are a [role] specialist in [domain].
 | Category       | Skill                                                                | Agent                                              |
 | -------------- | -------------------------------------------------------------------- | -------------------------------------------------- |
 | **Definition** | Procedural knowledge + tool bundle                                   | Expert persona + behavioral principles             |
-| **Location**   | `.agents/skills/{name}/SKILL.md`                                     | `.codex/agents/{name}.toml`                        |
+| **Location**   | `.codex/skills/{name}/SKILL.md`                                     | `.codex/agents/{name}.toml`                        |
 | **Trigger**    | Orchestrator auto-selects via user request keyword matching          | Orchestrator explicitly calls with `@{name}`       |
 | **Size**       | Small to large (workflows)                                           | Small (role definition)                            |
 | **Purpose**    | "**How** to do it"                                                   | "**Who** does it"                                  |
@@ -403,9 +407,9 @@ Three ways agents utilize skills.
 
 | Method                     | Implementation                                                                              | When Suitable                                                             |
 | -------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| **Direct skill file load** | Orchestrator reads via `cat .agents/skills/{name}/SKILL.md` and injects into prompt        | When the skill is an independent workflow and the user can call it directly |
+| **Direct skill file load** | Orchestrator reads via `cat .codex/skills/{name}/SKILL.md` and injects into prompt        | When the skill is an independent workflow and the user can call it directly |
 | **Inline in prompt**       | Skill content is directly included in the agent definition body                             | When the skill is short (50 lines or fewer) and **exclusive** to this agent |
-| **Reference load**         | Load `.agents/skills/{skill}/references/*.md` via shell `cat` as needed                    | When skill content is large and only **conditionally** needed             |
+| **Reference load**         | Load `.codex/skills/{skill}/references/*.md` via shell `cat` as needed                    | When skill content is large and only **conditionally** needed             |
 
 **Recommendation:**
 

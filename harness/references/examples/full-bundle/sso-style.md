@@ -19,7 +19,7 @@
 
 ---
 
-## 2. 오케스트레이터 SKILL.md (`.agents/skills/sso-dev-flow/SKILL.md`)
+## 2. 오케스트레이터 SKILL.md (`.codex/skills/sso-dev-flow/SKILL.md`)
 
 ```markdown
 ---

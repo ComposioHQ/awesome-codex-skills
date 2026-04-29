@@ -71,7 +71,7 @@ Systematically performs inspection, modification, and synchronization of an exis
 ### Step 1: Status Audit
 
 - Compare the file list in `.codex/agents/` against the agent configuration in the orchestrator skill → generate a discrepancy list.
-- Compare the directory list in `.agents/skills/` against the skill configuration in the orchestrator skill → generate a discrepancy list.
+- Compare the directory list in `.codex/skills/` against the skill configuration in the orchestrator skill → generate a discrepancy list.
 - Report audit results to the user.
 
 ### Step 2: Incremental Addition/Modification

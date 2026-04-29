@@ -69,7 +69,7 @@ Task list format registered by the orchestrator in Phase 1:
 
 ### Skill File Structure
 
-- Path: `.agents/skills/{skill-name}/SKILL.md`.
+- Path: `.codex/skills/{skill-name}/SKILL.md`.
 - Large knowledge bases are split into `references/` (Progressive Disclosure).
 
 ### Orchestrator Skill

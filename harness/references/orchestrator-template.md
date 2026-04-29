@@ -81,13 +81,16 @@ Please resolve the blocking cause and resume. ("continue" / "restart")
    | `references/schemas/agent-worker.template.toml`        | `_workspace/_schemas/agent-worker.template.toml`        |
    | `references/schemas/agent-orchestrator.template.md`    | `_workspace/_schemas/agent-orchestrator.template.md`    |
    | `references/schemas/agent-state-manager.template.toml` | `_workspace/_schemas/agent-state-manager.template.toml` |
+   | `references/schemas/state.py`                          | `_workspace/state.py`                                   |
+
+   > **`state.py` destination is `_workspace/state.py`** (not `_workspace/_schemas/`). Used internally by `@state-manager` — the orchestrator does not call it directly.
 
    > `README.md`, `models.md`, and agent templates are for reference when creating agent definitions — the workspace copy serves as the creation baseline. `models.md` is the SoT for model IDs and must always be synced.
    > **`shell cp ...` is prohibited** — the skill reference path is unreachable via shell from the runtime working directory (user project root). Always use shell `cat` + `apply_patch`.
 
    **Operational rules:**
    - Worker agents must read `_workspace/_schemas/task.schema.json` before writing their own output.
-   - The main agent must validate against the schema every time it updates `task_*.json` or `checkpoint.json`.
+   - `checkpoint.json` writes are validated by `python _workspace/state.py` against `_workspace/_schemas/checkpoint.schema.json` — no separate validation step needed by the orchestrator.
    - When the skill is updated, the new schema applies starting from the next init. Do not modify workspace schemas during an in-progress run (preserve the snapshot).
    - **SoT:** `references/schemas/`. The workspace copy is a snapshot at execution time.
 
@@ -110,7 +113,7 @@ Please resolve the blocking cause and resume. ("continue" / "restart")
    | expert_pool              | + `[Routing Rationale]` (format: `"- {agent}: {reason} (matched keywords: {keywords})"`) |
 
 6. Initialize `tasks.md` — copy `_workspace/_schemas/tasks.template.md` (keep headers only, leave rows empty).
-7. Create `checkpoint.json` — populate all fields from `_workspace/_schemas/checkpoint.schema.json`:
+7. Create `checkpoint.json` — populate all required fields (validated against `_workspace/_schemas/checkpoint.schema.json` by `python _workspace/state.py` on every write):
 
 ```json
 {
