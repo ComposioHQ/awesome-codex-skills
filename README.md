@@ -113,6 +113,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
+- [product-manager-skills](https://github.com/Digidai/product-manager-skills) - Senior PM agent with 6 knowledge domains, 30+ frameworks, 32 SaaS metrics with formulas, 12 templates, and anti-pattern detection. Pure Markdown.
 
 ### Communication & Writing
 - [codex-sms-verification](https://github.com/virtualsms-io/codex-sms-verification) - External repo: real-SIM SMS verification for AI agents via VirtualSMS MCP. 145+ countries, 2000+ services, both hosted (mcp.virtualsms.io) and local stdio transports.
