@@ -209,3 +209,5 @@ PRs welcome. Add real, reusable skills, keep descriptions precise, and include a
     <img src="https://img.shields.io/badge/Get_Started_Free-4F46E5?style=for-the-badge" alt="Get Started"/>
   </a>
 </p>
+
+- [skill-audit](https://github.com/aptratcn/skill-audit) - Pre-install security scanner for AI agent skills. Detects malicious patterns, social engineering, and permission overreach before you install. 6-phase protocol with risk scoring. Zero dependencies.
