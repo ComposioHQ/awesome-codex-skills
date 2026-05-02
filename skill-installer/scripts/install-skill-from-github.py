@@ -15,7 +15,7 @@ import urllib.parse
 import zipfile
 
 from github_utils import github_request
-DEFAULT_REF = "main"
+DEFAULT_REF = "master"
 
 
 @dataclass
