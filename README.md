@@ -136,6 +136,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
 - [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.
+- [Honeydew Semantic Layer](https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins) - 11 skills + MCP server for building and querying a governed semantic layer over Snowflake, Databricks, and BigQuery. Same trusted model serves BI tools and AI agents. Plugins are Apache 2.0.
 
 ### Meta & Utilities
 
