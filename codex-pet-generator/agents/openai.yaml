@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Pet Generator"
+  short_description: "Generate Codex pet packages."
+  default_prompt: "Use $codex-pet-generator to generate a Codex pet package from this reference image."
