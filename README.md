@@ -96,6 +96,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [AuraKit](https://github.com/smorky850612/Aurakit) - All-in-one skill framework: 46 modes, 23 sub-agents, 6-layer OWASP security, 10 lifecycle hooks, ~55% token savings. Install: `npx @smorky85/aurakit`
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) - Governed Codex skill harness for staged, test-driven work: routes 340+ skills through requirement freeze, plan approval, execution, verification evidence, and cross-session memory.
 - [polywave](https://github.com/blackwell-systems/polywave-codex) - Parallel agent coordination with structural merge safety. Scout decomposes, Wave agents implement in isolated worktrees with disjoint file ownership. Same protocol on Claude Code and Codex.
+- [recsys-pipeline-architect](https://github.com/mturac/recsys-pipeline-architect) - Designs composable recommendation, ranking, and feed pipelines using the six-stage Source→Hydrator→Filter→Scorer→Selector→SideEffect framework popularized by xAI's open-sourced X For You algorithm. Walks through use case → sources → hydrations → filters → scorers → selector → side effects → scaffold, and emits runnable scaffolds for Strapi v5 (TypeScript), Go, or Python/FastAPI. Install: `git clone https://github.com/mturac/recsys-pipeline-architect.git ~/.codex/skills/recsys-pipeline-architect`
 
 ### Productivity & Collaboration
 
