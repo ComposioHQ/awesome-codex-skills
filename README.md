@@ -149,6 +149,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
+- [skill-guide](https://github.com/gtskevin/skill-guide) - Zero-dependency CLI that scans Claude Code, Codex, cc-switch, and plugin skill directories, then generates HTML slide presentations showing what skills are installed. Works as both an npm package and a Claude Code/Codex skill.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
 
