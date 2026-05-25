@@ -96,6 +96,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [AuraKit](https://github.com/smorky850612/Aurakit) - All-in-one skill framework: 46 modes, 23 sub-agents, 6-layer OWASP security, 10 lifecycle hooks, ~55% token savings. Install: `npx @smorky85/aurakit`
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) - Governed Codex skill harness for staged, test-driven work: routes 340+ skills through requirement freeze, plan approval, execution, verification evidence, and cross-session memory.
 - [polywave](https://github.com/blackwell-systems/polywave-codex) - Parallel agent coordination with structural merge safety. Scout decomposes, Wave agents implement in isolated worktrees with disjoint file ownership. Same protocol on Claude Code and Codex.
+- [authsome](https://github.com/agentrhq/authsome) - Local credential broker. Log in once via OAuth2 or API key, encrypted vault stores credentials, local proxy injects them at request time so Codex never sees raw secrets. 45 providers bundled (14 OAuth2, 31 API key). Install: `npx skills add agentrhq/authsome`.
 
 ### Productivity & Collaboration
 
