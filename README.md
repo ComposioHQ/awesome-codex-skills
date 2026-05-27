@@ -96,6 +96,9 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [AuraKit](https://github.com/smorky850612/Aurakit) - All-in-one skill framework: 46 modes, 23 sub-agents, 6-layer OWASP security, 10 lifecycle hooks, ~55% token savings. Install: `npx @smorky85/aurakit`
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) - Governed Codex skill harness for staged, test-driven work: routes 340+ skills through requirement freeze, plan approval, execution, verification evidence, and cross-session memory.
 - [polywave](https://github.com/blackwell-systems/polywave-codex) - Parallel agent coordination with structural merge safety. Scout decomposes, Wave agents implement in isolated worktrees with disjoint file ownership. Same protocol on Claude Code and Codex.
+- [awesome-vibe-skills](https://github.com/gtskevin/awesome-vibe-skills) - Curated collection of 10 high-quality, ready-to-install AI coding agent skills. Bilingual (中文/English) with one-click installer. Covers code review, security scanning, test generation, and more.
+- [vibe-toolkit](https://github.com/gtskevin/vibe-toolkit) - The missing CLI for AI coding assistants. Install skills, validate SKILL.md files, scaffold new skills. One Python file, zero dependencies.
+- [vibe-check](https://github.com/gtskevin/vibe-check) - Drop-in quality gate for AI-generated code. Single SKILL.md that checks security, correctness, structure, performance, testing, and docs. Say "vibe check" to get a scorecard.
 
 ### Productivity & Collaboration
 
@@ -149,6 +152,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
+- [skill-guide](https://github.com/gtskevin/skill-guide) - Zero-dependency CLI that scans Claude Code, Codex, cc-switch, and plugin skill directories, then generates HTML slide presentations showing what skills are installed. Works as both an npm package and a Claude Code/Codex skill.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
 
