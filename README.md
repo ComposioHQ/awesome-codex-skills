@@ -97,6 +97,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) - Governed Codex skill harness for staged, test-driven work: routes 340+ skills through requirement freeze, plan approval, execution, verification evidence, and cross-session memory.
 - [polywave](https://github.com/blackwell-systems/polywave-codex) - Parallel agent coordination with structural merge safety. Scout decomposes, Wave agents implement in isolated worktrees with disjoint file ownership. Same protocol on Claude Code and Codex.
 - [awesome-vibe-skills](https://github.com/gtskevin/awesome-vibe-skills) - Curated collection of 10 high-quality, ready-to-install AI coding agent skills. Bilingual (中文/English) with one-click installer. Covers code review, security scanning, test generation, and more.
+- [vibe-toolkit](https://github.com/gtskevin/vibe-toolkit) - The missing CLI for AI coding assistants. Install skills, validate SKILL.md files, scaffold new skills. One Python file, zero dependencies.
 - [vibe-check](https://github.com/gtskevin/vibe-check) - Drop-in quality gate for AI-generated code. Single SKILL.md that checks security, correctness, structure, performance, testing, and docs. Say "vibe check" to get a scorecard.
 
 ### Productivity & Collaboration
