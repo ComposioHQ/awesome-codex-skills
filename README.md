@@ -133,6 +133,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
 - [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
+- [Alpha Insights](https://github.com/Ericyoung-183/alpha-insights) - External repo: business research skill for Codex and Claude Code with consulting frameworks, evidence grading, stage gates, and HTML report generation.
 - [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
