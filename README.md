@@ -137,6 +137,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
+- [onequery-cli](https://github.com/wordbricks/skills/tree/main/skills/onequery-cli) - Agent-ready CLI/skill for bounded, auditable queries against approved data sources through centralized credentials, read-only validation, limits, and audit logs.
 - [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.
 
 ### Meta & Utilities
