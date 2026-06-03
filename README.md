@@ -118,6 +118,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Communication & Writing
 - [codex-sms-verification](https://github.com/virtualsms-io/codex-sms-verification) - External repo: real-SIM SMS verification for AI agents via VirtualSMS MCP. 145+ countries, 2000+ services, both hosted (mcp.virtualsms.io) and local stdio transports.
+- [sci-manuscript-architect](https://github.com/Liangshuntao/sci-manuscript-architect) - External repo: biomedical SCI manuscript architecture skill with motivation-first PaperSpine mapping, Evidence Ledger claim control, Citation Support Bank, IMRAD blueprints, reviewer audits, and corpus-driven terminology/style profiling. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo Liangshuntao/sci-manuscript-architect --path . --name sci-manuscript-architect`
 
 - [email-draft-polish/](./email-draft-polish/) - Draft, rewrite, or condense emails for the right tone and audience.
 - [changelog-generator/](./changelog-generator/) - Create clear changelogs from commits or summaries.
