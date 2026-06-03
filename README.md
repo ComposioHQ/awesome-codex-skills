@@ -145,6 +145,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
+- [runapi-mcp](https://github.com/runapi-ai/mcp) - External repo: MCP server exposing 130+ AI models for image, video, music, audio, and LLM generation from 18 providers. Free catalog and pricing tools, no API key required for discovery. Install: `npx @runapi.ai/mcp`
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
