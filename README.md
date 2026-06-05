@@ -115,6 +115,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
+- [Diffmode Growth Tactics](https://github.com/acogood/diffmode_free) - Growth-strategy research pipeline for Codex: a competitor read, a buyer jobs-to-be-done map, and 7-9 unconventional acquisition tactics written to `synthesis.md`. Mines growth mechanisms from fresh case studies and fuses 2-3 per tactic. Run: `python3 codex/orchestrate.py --url <site>`. Free, Apache-2.0, Perplexity-optional.
 
 ### Communication & Writing
 - [codex-sms-verification](https://github.com/virtualsms-io/codex-sms-verification) - External repo: real-SIM SMS verification for AI agents via VirtualSMS MCP. 145+ countries, 2000+ services, both hosted (mcp.virtualsms.io) and local stdio transports.
