@@ -122,6 +122,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [email-draft-polish/](./email-draft-polish/) - Draft, rewrite, or condense emails for the right tone and audience.
 - [changelog-generator/](./changelog-generator/) - Create clear changelogs from commits or summaries.
 - [content-research-writer/](./content-research-writer/) - Research and draft content with sourced citations.
+- [redbook-director-skill](https://github.com/mythkiven/redbook-director-skill) - Codex skill for planning Xiaohongshu/RedNote carousel posts with visual direction, page-by-page structure, AI image prompts, captions, hashtags, and review checklists. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo mythkiven/redbook-director-skill --path . --name redbook-director-skill`
 - [diasporic-intelligence](https://github.com/MinistaJazz/diasporic-intelligence) - External repo: source-credit skill for consent-governed lineage AI with attribution, provenance, revocation, and non-impersonation boundaries.
 - [novel-writing](https://github.com/wgwtest/novel-writing) - External repo: public Codex skill for fiction planning, chapter drafting, scene continuation, and revision.
 - [tailored-resume-generator/](./tailored-resume-generator/) - Tailor resumes to job descriptions with quantified impact.
