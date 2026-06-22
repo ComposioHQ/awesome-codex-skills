@@ -118,6 +118,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Communication & Writing
 - [codex-sms-verification](https://github.com/virtualsms-io/codex-sms-verification) - External repo: real-SIM SMS verification for AI agents via VirtualSMS MCP. 145+ countries, 2000+ services, both hosted (mcp.virtualsms.io) and local stdio transports.
+- [hermes-tweet](https://github.com/Xquik-dev/hermes-tweet/tree/master/skills/hermes-tweet) - External repo: Codex skill for Hermes Tweet social workflows: X search, social listening, trends, publishing, monitors, webhooks, media, and gated account actions.
 
 - [email-draft-polish/](./email-draft-polish/) - Draft, rewrite, or condense emails for the right tone and audience.
 - [changelog-generator/](./changelog-generator/) - Create clear changelogs from commits or summaries.
