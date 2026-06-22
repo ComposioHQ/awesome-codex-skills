@@ -141,6 +141,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Meta & Utilities
 
+- [agent-skill-groups](https://github.com/go165/agent-skill-groups) - Codex skill-group manager for organizing large local `SKILL.md` libraries into scenario profiles. Switch lean/core, research, frontend-browser, CTF, desktop-media, and custom groups without editing skill files; includes install self-test and cross-runtime support for Codex, Claude Code, and OpenCode.
 - [brand-guidelines/](./brand-guidelines/) - Apply OpenAI/Codex brand colors and typography to artifacts.
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
