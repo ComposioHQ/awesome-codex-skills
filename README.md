@@ -80,6 +80,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Development & Code Tools
 
+- [agent-runbook](https://github.com/KnoxOps/agent-runbook) - Python CLI that compiles contract-based YAML runbooks into SKILL.md files for Codex and Claude Code. Define multi-step agent workflows with inline prompts, agent dispatch, loops, parallel fan-out, branching, and checkpoints — file-based state passing keeps context clean between steps.
 - [brooks-lint](https://github.com/hyhmrright/brooks-lint) - AI code reviews grounded in six classic engineering books — decay risk diagnostics with book citations, severity labels, and four analysis modes (PR review, architecture audit, tech debt, test quality). Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo hyhmrright/brooks-lint --path skills/brooks-lint --name brooks-lint`
 - [bringyour-migration-auditor](https://github.com/unitedideas/bringyour-mcp/tree/main/skills/bringyour-migration-auditor) - Audit Claude Code to Codex harness migrations for AGENTS.md/CLAUDE.md scope, hooks, MCP config, skills, secrets, and validation notes. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo unitedideas/bringyour-mcp --path skills/bringyour-migration-auditor --name bringyour-migration-auditor`
 - [codebase-migrate/](./codebase-migrate/) - Run large codebase migrations and multi-file refactors in reviewable batches with CI verification.
