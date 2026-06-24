@@ -101,6 +101,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 - [connect/](./connect/) - Connect Codex to 1000+ apps via the Composio CLI for real actions (Slack, GitHub, Notion, etc.).
 - [connect-apps/](./connect-apps/) - Wire up Composio CLI connections for Claude and kick off app workflows from the shell.
+- [family-os](https://github.com/living-hi/family-os) - External repo: privacy-first household operating system for Codex agents with local workspaces, multilingual templates, dashboards, projects, decisions, and family memory. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo living-hi/family-os --path skill --name family-os`
 - [issue-triage/](./issue-triage/) - Triage Linear or Jira backlogs and run bug sweeps from the terminal.
 - [linear/](./linear/) - Manage issues, projects, and team workflows in Linear.
 - [meeting-insights-analyzer/](./meeting-insights-analyzer/) - Analyze meeting transcripts for themes, risks, and follow-ups.
