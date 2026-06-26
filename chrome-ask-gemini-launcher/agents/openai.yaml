@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chrome Ask Gemini Launcher"
+  short_description: "Create a macOS Chrome launcher for Ask Gemini"
+  default_prompt: "Use $chrome-ask-gemini-launcher to diagnose Chrome Ask Gemini availability and create a macOS launcher."
