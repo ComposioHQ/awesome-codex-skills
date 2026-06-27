@@ -99,6 +99,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Productivity & Collaboration
 
+- [AI Delivery Spec](https://github.com/franklinxkk/ai-delivery-spec) - Product-side Spec-Driven Delivery framework for PRDs, prototypes, acceptance criteria, lifecycle governance, and coding-agent handoff.
 - [connect/](./connect/) - Connect Codex to 1000+ apps via the Composio CLI for real actions (Slack, GitHub, Notion, etc.).
 - [connect-apps/](./connect-apps/) - Wire up Composio CLI connections for Claude and kick off app workflows from the shell.
 - [issue-triage/](./issue-triage/) - Triage Linear or Jira backlogs and run bug sweeps from the terminal.
