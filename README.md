@@ -149,6 +149,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
+- [Your Prompt Engineer](https://github.com/polychrome7/your-prompt-engineer) - External repo: prompt handoff layer that turns rough requests into dispatch-ready prompts for Codex and Claude Code agents, with target validation, explorer/worker routing, confirmation, and safety gates.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
 
