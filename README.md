@@ -114,6 +114,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
+- [mdpr-skill](https://github.com/ch040602/mdpr-skill/tree/main/skills/mdpr-skill) - Review MDPR Markdown presentation workflows with semantic hints, visual checks, codex-ppt compatibility rails, and deterministic-renderer boundaries. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo ch040602/mdpr-skill --path skills/mdpr-skill --name mdpr-skill`
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
 
 ### Communication & Writing
