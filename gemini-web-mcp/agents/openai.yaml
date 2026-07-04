@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gemini Web MCP"
+  short_description: "Use and maintain Gemini Web MCP safely."
+  default_prompt: "Use $gemini-web-mcp to inspect manifest workflows and current_enabled first, prefer facade tools such as gemini_history and gemini_account_inventory for narrow agents, choose read-only tools where possible, and verify generated media files before claiming success."
