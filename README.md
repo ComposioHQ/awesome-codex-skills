@@ -191,6 +191,8 @@ Best practices:
 - Include scripts for repeatable or deterministic operations; mention when Codex should run them.
 - Avoid extra docs (README, changelog) inside the skill folder to keep context lean.
 
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts for Claude Code: 4 structured Markdown templates + 5 skills (crm-everything, open-loops, watchers, morning-briefing, session-digest). Start every session context-full, not context-zero. MIT, one-command install.
+
 ## Contributing
 
 PRs welcome. Add real, reusable skills, keep descriptions precise, and include any needed scripts or references. If you add new skills, ensure the `description` clearly states when Codex should trigger and test that metadata fits within context limits.
