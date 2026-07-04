@@ -133,6 +133,8 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
 - [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
+- [manage-research-portfolio](https://github.com/jiangjin1999/codex-research-project-skills/tree/main/skills/manage-research-portfolio) - External repo: manage multi-project research portfolios with status evidence, data boundaries, and handoffs. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo jiangjin1999/codex-research-project-skills --path skills/manage-research-portfolio --name manage-research-portfolio`
+- [iterate-research-project](https://github.com/jiangjin1999/codex-research-project-skills/tree/main/skills/iterate-research-project) - External repo: iterate one research project through subprojects, docs, data notes, literature, and AI memory. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo jiangjin1999/codex-research-project-skills --path skills/iterate-research-project --name iterate-research-project`
 - [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
