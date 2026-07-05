@@ -92,6 +92,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [mcp-builder/](./mcp-builder/) - Build and evaluate MCP servers with best practices and an evaluation harness.
 - [pr-review-ci-fix/](./pr-review-ci-fix/) - Automated GitHub/GitLab PR review plus CI auto-fix loop via the Composio CLI.
 - [sentry-triage/](./sentry-triage/) - Diagnose Sentry issues by mapping stack frames to local source — no copy-paste.
+- [TRAECNclaw MCP](https://github.com/Luckycat133/traecnclaw-mcp-skill) - Portable Agent Skill and stdio MCP server bundle for connecting Codex and other MCP-capable agents to TraeCN desktop automation. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo Luckycat133/traecnclaw-mcp-skill --path .codex/skills/traecnclaw-mcp --name traecnclaw-mcp`
 - [webapp-testing/](./webapp-testing/) - Run targeted web app tests and summarize results.
 - [AuraKit](https://github.com/smorky850612/Aurakit) - All-in-one skill framework: 46 modes, 23 sub-agents, 6-layer OWASP security, 10 lifecycle hooks, ~55% token savings. Install: `npx @smorky85/aurakit`
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) - Governed Codex skill harness for staged, test-driven work: routes 340+ skills through requirement freeze, plan approval, execution, verification evidence, and cross-session memory.
