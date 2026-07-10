@@ -204,6 +204,7 @@ PRs welcome. Add real, reusable skills, keep descriptions precise, and include a
 ## Resources
 
 - [Top Codex Skills](https://composio.dev/content/top-codex-skills)
+- [AI Router OpenAI-Compatible Examples](https://github.com/airouter-dev/ai-router-openai-compatible-examples) - OpenAI-compatible setup examples for cURL, Python, Node.js, Cursor, Continue, LiteLLM, Open WebUI, plus BYOK smoke-test and localized landing page references.
 
 ---
 
