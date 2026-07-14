@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Graph Analysis"
+  short_description: "Use Ontoly graph evidence for architecture, dependency, route, and impact questions."
+  default_prompt: "Use Ontoly to build or query the Software Graph, cite graph evidence, and fall back to source search only when the graph is missing or insufficient."
