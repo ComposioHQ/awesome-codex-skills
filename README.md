@@ -90,6 +90,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [gh-address-comments/](./gh-address-comments/) - Address review or issue comments on the open GitHub PR for the current branch using `gh`.
 - [gh-fix-ci/](./gh-fix-ci/) - Inspect failing GitHub Actions checks, summarize failures, and propose fixes.
 - [mcp-builder/](./mcp-builder/) - Build and evaluate MCP servers with best practices and an evaluation harness.
+- [Ontoly](https://github.com/0xsarwagya/ontoly/tree/main/skills) - Software Graph Agent Skills for deterministic architecture review, dependency analysis, request tracing, configuration analysis, and impact analysis. Install: `npx skills add 0xsarwagya/ontoly --list`
 - [pr-review-ci-fix/](./pr-review-ci-fix/) - Automated GitHub/GitLab PR review plus CI auto-fix loop via the Composio CLI.
 - [sentry-triage/](./sentry-triage/) - Diagnose Sentry issues by mapping stack frames to local source — no copy-paste.
 - [webapp-testing/](./webapp-testing/) - Run targeted web app tests and summarize results.
