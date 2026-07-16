@@ -138,6 +138,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
 - [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.
+- [goose-skills](https://github.com/gooseworks-ai/goose-skills) - Lead research, data scraping, and competitive-intel skill library: 125 growth/GTM skills spanning ads analysis, outreach, content, monitoring, and SEO. Works in Codex, Claude Code, and Cursor.
 
 ### Meta & Utilities
 
