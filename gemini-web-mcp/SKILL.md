@@ -102,12 +102,13 @@ asyncio.run(main())
 PY
 ```
 
-For skill-only changes, at minimum run the skill validator for both the local
-project copy and the public repo skill copy:
+For skill-only changes, validate each skill copy with the standard Agent Skills
+validator (`skills-ref`, see https://agentskills.io/specification#validation):
 
 ```bash
+# Install once if needed: pip install skills-ref
 for path in .codex/skills/gemini-web-mcp .agents/skills/gemini-web-mcp; do
-  ./.venv/bin/python /Users/jack/.codex/skills/.system/skill-creator/scripts/quick_validate.py "$path"
+  skills-ref validate "$path"
 done
 ```
 
