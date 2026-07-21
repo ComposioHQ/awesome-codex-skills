@@ -148,6 +148,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
+- [edit-timeline-studio](https://github.com/MartinDelophy/ai-video-editor/tree/main/skills/edit-timeline-studio) - Create editable video timelines from local media with AI voiceover, synchronized captions, overlays, deterministic browser rendering, and `.timeline` plus MP4/WebM deliverables. Install: `gh skill install MartinDelophy/ai-video-editor edit-timeline-studio --agent codex --scope user`
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
