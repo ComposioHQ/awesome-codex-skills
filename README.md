@@ -138,8 +138,8 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
 - [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.
-- [agentic-longevity-analysis](https://github.com/liveforeverbetter/agentic-longevity-analysis) - Healthspan analysis for Codex — Whole Genome Sequencing (ClinVar, CPIC, PRS), 168+ biomarker interpretation, and wearable data processing (WHOOP, Oura, Garmin). MIT licensed. Install: `npx skills add liveforeverbetter/agentic-longevity-analysis -g -a codex -y`
-- [wellnizz](https://github.com/liveforeverbetter/wellnizz) - ForeverBetter hosted health API for Codex — 21 MCP tools for biomarkers, wearables, and genomic analysis. Self-hostable (Docker) or hosted at app.wellnizz.com. Install: `npx skills add liveforeverbetter/wellnizz --skill wellnizz -g -a codex -y`
+- [agentic-longevity-analysis](https://github.com/liveforeverbetter/agentic-longevity-analysis) - Agent-native healthspan analysis for Codex — Whole Genome Sequencing (ClinVar, CPIC, PRS), 168+ biomarker interpretation, and wearable data processing (WHOOP, Oura, Garmin). MIT licensed. Install: `npx skills add liveforeverbetter/agentic-longevity-analysis -g -a codex -y`
+- [wellnizz](https://github.com/liveforeverbetter/wellnizz) - Agent-native health API for Codex — 21 MCP tools for biomarkers, wearables, and genomic analysis. Self-hostable (Docker) or hosted at app.wellnizz.com. Install: `npx skills add liveforeverbetter/wellnizz --skill wellnizz -g -a codex -y`
 
 ### Meta & Utilities
 
