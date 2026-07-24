@@ -118,6 +118,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
+- [Riffkit](https://github.com/riffkit/skill) - Riff a winning TikTok's emotion formula into a new short video with your product, character, and language (EN/ES); makes post-ready short-form and UGC ad creative. Hosted — install by reading https://riffkit.ai/SKILL.md from your agent.
 
 ### Communication & Writing
 - [codex-sms-verification](https://github.com/virtualsms-io/codex-sms-verification) - External repo: real-SIM SMS verification for AI agents via VirtualSMS MCP. 145+ countries, 2000+ services, both hosted (mcp.virtualsms.io) and local stdio transports.
