@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/composiohq-awesome-codex-skills-badge.png)](https://mseep.ai/app/composiohq-awesome-codex-skills)
+
 <h1 align="center">Awesome Codex Skills</h1>
 
 <p align="center">
