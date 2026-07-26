@@ -70,6 +70,16 @@ def package_skill(skill_path, output_dir=None):
             # Walk through the skill directory
             for file_path in skill_path.rglob("*"):
                 if file_path.is_file():
+                    # Resolve the real path to handle symlinks and prevent path traversal
+                    real_path = file_path.resolve()
+
+                    # Verify the resolved path is within the skill directory
+                    try:
+                        real_path.relative_to(skill_path.parent)
+                    except ValueError:
+                        print(f"  Skipped (outside allowed directory): {file_path}")
+                        continue
+
                     # Calculate the relative path within the zip
                     arcname = file_path.relative_to(skill_path.parent)
                     zipf.write(file_path, arcname)
