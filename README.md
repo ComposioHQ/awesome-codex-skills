@@ -155,6 +155,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
+- [gptskin-theme](https://github.com/WendongAI/gptskin-skill) - Apply image-backed themes to the Codex desktop app: 6 free presets or any image as a full-window background, one-command apply and one-sentence restore (macOS + Windows). Install: `git clone https://github.com/WendongAI/gptskin-skill.git ~/.codex/skills/gptskin-theme && cd ~/.codex/skills/gptskin-theme && npm install`
 
 ## Using Skills in Codex
 
