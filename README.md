@@ -1,6 +1,10 @@
 <h1 align="center">Awesome Codex Skills</h1>
 
 <p align="center">
+  <b>English</b> | <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
 <a href="https://dashboard.composio.dev/login?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeCodexSkills">
 
   <img width="1280" height="640" alt="Composio banner" src="codex_cover_image.png">
