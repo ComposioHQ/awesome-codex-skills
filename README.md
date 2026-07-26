@@ -117,6 +117,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
+- [codex-ppt](https://github.com/ningzimu/codex-ppt-skill) - External repo: generate visually unified image-based PPTX decks from articles, reports, papers, course notes, or outlines with `gpt-image-2`, style references, speaker notes, and local PowerPoint assembly. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo ningzimu/codex-ppt-skill --path skills/codex-ppt --name codex-ppt`
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
 - [Taisly Agent Kit](https://github.com/taisly/agent) - Publish approved short-form videos from Codex with a bundled skill, CLI, and remote MCP server for TikTok, Instagram Reels, YouTube Shorts, X, and Facebook.
 
