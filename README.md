@@ -138,6 +138,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
 - [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
 - [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
+- [top-journal-tracker](https://github.com/huangqi202306/top-journal-tracker) - External repo: track recent frontier papers from top journals with `/topjournal`, generating Chinese Markdown digests and CSV exports from PubMed, Crossref, and optional RSS feeds. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo huangqi202306/top-journal-tracker --path . --name top-journal-tracker`
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
