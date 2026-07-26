@@ -208,6 +208,7 @@ PRs welcome. Add real, reusable skills, keep descriptions precise, and include a
 ## Resources
 
 - [Top Codex Skills](https://composio.dev/content/top-codex-skills)
+- [Remote OpenClaw](https://www.remoteopenclaw.com/skills/codex) - directory of codex, claude code and openclaw skills plus mcp servers, browsable by ecosystem and category
 
 ---
 
