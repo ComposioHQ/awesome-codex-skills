@@ -151,6 +151,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
+- [codex-skin-pack-installer](https://github.com/ChannelerH/codex-skin-packs/tree/main/codex-skin-pack-installer) - Install verified public-safe Codex skin packs from GitHub releases, validate `theme.json`/`background.png`, stage them locally, and keep restore guidance. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo ChannelerH/codex-skin-packs --path codex-skin-pack-installer --name codex-skin-pack-installer`
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
