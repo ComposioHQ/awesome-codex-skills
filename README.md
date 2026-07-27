@@ -142,6 +142,8 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
 - [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.
+- [unifapi](https://github.com/unifapi-agent/skills/tree/main/skills/unifapi) - External repo: connect Codex to UnifAPI public-data MCP and API workflows.
+- [kol-pricing](https://github.com/unifapi-agent/skills/tree/main/skills/kol-pricing) - External repo: price creator campaigns from public social data with UnifAPI MCP.
 
 ### Meta & Utilities
 
