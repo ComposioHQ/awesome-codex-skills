@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://harness/schemas/task.schema.json",
+  "title": "task_{agent}_{id}.json",
+  "description": "Worker → Main agent atomic report. Workers write only their own file; main aggregates via GLOB.",
+  "type": "object",
+  "required": ["id", "agent", "stage", "step", "status", "timestamp"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^task_[a-zA-Z0-9_-]+_[0-9]+$",
+      "description": "Format: task_{agent-name-without-@}_{seq}. Example: task_researcher-trend_1"
+    },
+    "agent": {
+      "type": "string",
+      "pattern": "^@[a-zA-Z0-9_-]+$",
+      "description": "Calling agent name with @ prefix. Must match .codex/agents/{name}.toml filename."
+    },
+    "stage": {
+      "type": "string",
+      "minLength": 1,
+      "description": "current_stage at time of writing (mirrors checkpoint.json)."
+    },
+    "step": {
+      "type": "string",
+      "minLength": 1,
+      "description": "current_step (≡ Task) at time of writing."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["todo", "in-progress", "done", "blocked"],
+      "description": "Task state. Only worker writes todo→in-progress→done. Blocked requires blocked_reason."
+    },
+    "evidence": {
+      "type": "string",
+      "description": "Verifiable predicate proving completion. Examples: 'go test ./... PASS', '_workspace/sso/research.md exists', 'verdict.json verdict=PASS'. Required when status=done."
+    },
+    "artifact": {
+      "type": "string",
+      "description": "Path to deliverable file produced. Convention: _workspace/{plan_name}/{step}_{agent}_{name}_v{n}.{ext}"
+    },
+    "blocked_reason": {
+      "type": "string",
+      "description": "Required when status=blocked. Concrete blocker description for user confirmation request routing."
+    },
+    "timestamp": {
+      "type": "string",
+      "pattern": "^[0-9]{8}_[0-9]{6}$",
+      "description": "Format: YYYYMMDD_HHMMSS. UTC."
+    },
+    "iterations": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Retry count for this task. Zero-Tolerance: hard cap = 3 (initial + 2 retries)."
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "done" } } },
+      "then": { "required": ["evidence", "artifact"] }
+    },
+    {
+      "if": { "properties": { "status": { "const": "blocked" } } },
+      "then": { "required": ["blocked_reason"] }
+    }
+  ]
+}

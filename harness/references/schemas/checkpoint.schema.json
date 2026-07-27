@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://harness/schemas/checkpoint.schema.json",
+  "title": "checkpoint.json",
+  "description": "Durable execution state. Main agent sole writer.",
+  "type": "object",
+  "required": [
+    "execution_id",
+    "plan_name",
+    "status",
+    "current_stage",
+    "current_step",
+    "active_pattern",
+    "stage_history",
+    "step_history",
+    "stage_artifacts",
+    "handoff_chain",
+    "tasks_snapshot",
+    "shared_variables",
+    "last_updated"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "execution_id": {
+      "type": "string",
+      "pattern": "^[0-9]{8}_[0-9]{6}$",
+      "description": "Initial creation timestamp. Immutable."
+    },
+    "plan_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "User-supplied or parsed work name. Used for _workspace/{plan_name}/ subdir."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["in_progress", "partial", "blocked", "completed"],
+      "description": "in_progress = normal run; partial = post-completion patch; blocked = waiting on user; completed = done."
+    },
+    "current_stage": {
+      "type": "string",
+      "description": "Stage name parsed from workflow.md '### Stage N: {name}' header."
+    },
+    "current_step": {
+      "type": "string",
+      "description": "Step name parsed from workflow.md '#### Step N: {name}' header. ≡ Task."
+    },
+    "active_pattern": {
+      "type": "string",
+      "enum": [
+        "pipeline",
+        "fan_out_fan_in",
+        "expert_pool",
+        "producer_reviewer",
+        "supervisor",
+        "hierarchical",
+        "handoff"
+      ],
+      "description": "Pattern of current_step. Drives invocation strategy in Step 2."
+    },
+    "stage_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["stage", "completed_at"],
+        "properties": {
+          "stage": { "type": "string" },
+          "completed_at": {
+            "type": "string",
+            "pattern": "^[0-9]{8}_[0-9]{6}$"
+          },
+          "user_approved": { "type": "boolean" }
+        }
+      },
+      "description": "Append-only log of completed Stages."
+    },
+    "step_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["stage", "step", "iterations", "completed_at"],
+        "properties": {
+          "stage": { "type": "string" },
+          "step": { "type": "string" },
+          "iterations": { "type": "integer", "minimum": 1 },
+          "completed_at": { "type": "string", "pattern": "^[0-9]{8}_[0-9]{6}$" }
+        }
+      },
+      "description": "Append-only log of completed Steps with iteration count (loop pattern check)."
+    },
+    "stage_artifacts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "description": "Map: stage_name → list of artifact file paths produced."
+    },
+    "handoff_chain": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Active handoff sequence (handoff pattern only). Reset to [] on stage transition or step completion."
+    },
+    "tasks_snapshot": {
+      "type": "object",
+      "required": ["done", "current"],
+      "properties": {
+        "done": { "type": "array", "items": { "type": "string" } },
+        "current": { "type": ["string", "null"] }
+      },
+      "description": "Cached list of done task ids and currently-active task id."
+    },
+    "shared_variables": {
+      "type": "object",
+      "description": "Runtime symbolic placeholder values. Example: {selected_expert: '@bug-analyst'} for expert_pool resolution."
+    },
+    "blocked_reason": {
+      "type": "string",
+      "description": "Required when status=blocked. Surface to user via user confirmation request."
+    },
+    "blocked_agent": {
+      "type": "string",
+      "pattern": "^@[a-zA-Z0-9_-]+$",
+      "description": "Required when status=blocked. Identifies which task_*.json files to clear on resume."
+    },
+    "last_updated": {
+      "type": "string",
+      "pattern": "^[0-9]{8}_[0-9]{6}$",
+      "description": "Refreshed on every checkpoint write."
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "blocked" } } },
+      "then": { "required": ["blocked_reason", "blocked_agent"] }
+    }
+  ]
+}
