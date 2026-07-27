@@ -1,0 +1,4 @@
+interface:
+  display_name: "html2link Publish"
+  short_description: "Publish agent artifacts as shareable html2link.dev URLs."
+  default_prompt: "Use $html2link-publish to publish this artifact as a shareable link."
