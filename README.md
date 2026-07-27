@@ -155,6 +155,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
+- [meta-skill](https://github.com/joohw/meta-skill) - Evaluate, differentiate, and design Agent Skills with a concise design brief, competitive scan, and distinctive skill identity. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo joohw/meta-skill --path . --name meta-skill`
 
 ## Using Skills in Codex
 
