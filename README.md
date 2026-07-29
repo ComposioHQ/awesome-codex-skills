@@ -155,6 +155,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
+- [skills-public](https://github.com/xiaopixuan/skills-public) - Public Codex skills catalog with draw.io diagram generation, skill design review, example prompts, editable diagram sources, and skill review scorecards.
 
 ## Using Skills in Codex
 
