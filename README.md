@@ -137,6 +137,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
 - [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
+- [Fact-Check-X](https://github.com/ASI2030/Fact-Check-X/tree/main/skills/fact-check-x-complete) - Capture complete answers and citations from one or more AI platforms, compare atomic claims, verify them against authoritative evidence, and produce traceable stage reports. Install: `npx skills add ASI2030/Fact-Check-X --skill fact-check-x-complete`
 - [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
