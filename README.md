@@ -29,6 +29,10 @@
   </p>
 </div>
 
+<p align="center">
+  <b>Translations:</b> <a href="./README.md">🌐 English</a> • <a href="./i18n/README.vi.md">🇻🇳 Tiếng Việt</a> • <a href="./i18n/README.zh-CN.md">🇨🇳 中文</a> • <a href="./i18n/README.ja-JP.md">🇯🇵 日本語</a>
+</p>
+
 A curated list of practical Codex skills for automating workflows across the Codex CLI and API.
 
 ## Give your skills real-world actions
@@ -89,9 +93,11 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [codebase-recon](https://github.com/yujiachen-y/codebase-recon-skill) - Analyze git history to understand a codebase before reading any code — surfaces hotspots, bug magnets, bus factor, momentum, and high-risk files (hotspot ∩ bug-magnet) via auto-scaled analysis. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo yujiachen-y/codebase-recon-skill --path skills/codebase-recon --name codebase-recon`
 - [create-plan/](./create-plan/) - Quickly draft concise execution plans for coding tasks.
 - [deploy-pipeline/](./deploy-pipeline/) - End-to-end Stripe → Supabase → Vercel release pipelines with verify and rollback.
+- [docker-security-audit/](./docker-security-audit/) - Audit Dockerfile and container setups for non-root execution, secret leaks, and multi-stage optimizations.
 - [Emdash Skills](https://github.com/megabytespace/claude-skills) - 14-category autonomous product-building OS: CF Workers + Hono + Angular + D1 + Stripe. One-line prompts to deployed SaaS with 94 reference docs, 18 agents, and Codex-native `.agents/skills/` support.
 - [gh-address-comments/](./gh-address-comments/) - Address review or issue comments on the open GitHub PR for the current branch using `gh`.
 - [gh-fix-ci/](./gh-fix-ci/) - Inspect failing GitHub Actions checks, summarize failures, and propose fixes.
+- [git-conflict-resolver/](./git-conflict-resolver/) - Safe and systematic resolution of git merge conflicts with intent analysis and build verification.
 - [mcp-builder/](./mcp-builder/) - Build and evaluate MCP servers with best practices and an evaluation harness.
 - [pr-review-ci-fix/](./pr-review-ci-fix/) - Automated GitHub/GitLab PR review plus CI auto-fix loop via the Composio CLI.
 - [sentry-triage/](./sentry-triage/) - Diagnose Sentry issues by mapping stack frames to local source — no copy-paste.
@@ -104,6 +110,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 - [connect/](./connect/) - Connect Codex to 1000+ apps via the Composio CLI for real actions (Slack, GitHub, Notion, etc.).
 - [connect-apps/](./connect-apps/) - Wire up Composio CLI connections for Claude and kick off app workflows from the shell.
+- [composio-skills/](./composio-skills/) - Access 800+ app-specific automation skills for Composio integrations.
 - [issue-triage/](./issue-triage/) - Triage Linear or Jira backlogs and run bug sweeps from the terminal.
 - [linear/](./linear/) - Manage issues, projects, and team workflows in Linear.
 - [meeting-insights-analyzer/](./meeting-insights-analyzer/) - Analyze meeting transcripts for themes, risks, and follow-ups.
