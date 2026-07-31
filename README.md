@@ -29,6 +29,10 @@
   </p>
 </div>
 
+<p align="center">
+  <b>Translations:</b> <a href="./README.md">🌐 English</a> • <a href="./i18n/README.vi.md">🇻🇳 Tiếng Việt</a>
+</p>
+
 A curated list of practical Codex skills for automating workflows across the Codex CLI and API.
 
 ## Give your skills real-world actions
@@ -104,6 +108,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 - [connect/](./connect/) - Connect Codex to 1000+ apps via the Composio CLI for real actions (Slack, GitHub, Notion, etc.).
 - [connect-apps/](./connect-apps/) - Wire up Composio CLI connections for Claude and kick off app workflows from the shell.
+- [composio-skills/](./composio-skills/) - Access 800+ app-specific automation skills for Composio integrations.
 - [issue-triage/](./issue-triage/) - Triage Linear or Jira backlogs and run bug sweeps from the terminal.
 - [linear/](./linear/) - Manage issues, projects, and team workflows in Linear.
 - [meeting-insights-analyzer/](./meeting-insights-analyzer/) - Analyze meeting transcripts for themes, risks, and follow-ups.
