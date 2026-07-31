@@ -29,6 +29,10 @@
   </p>
 </div>
 
+<p align="center">
+  <b>Translations:</b> <a href="./README.md">🌐 English</a> • <a href="./i18n/README.vi.md">🇻🇳 Tiếng Việt</a>
+</p>
+
 A curated list of practical Codex skills for automating workflows across the Codex CLI and API.
 
 ## Give your skills real-world actions
