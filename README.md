@@ -149,6 +149,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
+- [review-ui-design](https://github.com/guoxuyee-create/Review-ui-design) - Read-only, evidence-based reviews of Web, iOS, and Android screenshots or Figma nodes, with prioritized findings, annotated evidence, actionable fixes, and verification steps. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo guoxuyee-create/Review-ui-design --path . --name review-ui-design`
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
