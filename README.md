@@ -145,6 +145,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Meta & Utilities
 
+- [God Of Prompt](https://github.com/DeAI1227/God-Of-Prompt) - Open-source Codex Skill that converts a rough requirement into a visible six-part XML system prompt and executes it immediately; includes explicit output contracts, safety boundaries, and evidence limits.
 - [brand-guidelines/](./brand-guidelines/) - Apply OpenAI/Codex brand colors and typography to artifacts.
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
