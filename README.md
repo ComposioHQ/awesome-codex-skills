@@ -115,6 +115,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [notion-research-documentation/](./notion-research-documentation/) - Synthesize multiple Notion sources into briefs, comparisons, or reports with citations.
 - [notion-spec-to-implementation/](./notion-spec-to-implementation/) - Turn Notion specs into implementation plans, tasks, and progress tracking.
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
+- [before-you-build](https://github.com/bin1874/before-you-build-skill) - External repo: pre-build product and feature risk review for Codex. Checks demand, distribution, pricing, retention, trust, and failure patterns before the agent writes code. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo bin1874/before-you-build-skill --path . --name before-you-build`
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
