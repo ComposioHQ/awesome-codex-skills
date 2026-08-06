@@ -139,6 +139,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [developer-growth-analysis/](./developer-growth-analysis/) - Analyze Codex chat history for coding patterns and learning gaps.
 - [lead-research-assistant/](./lead-research-assistant/) - Research leads and enrich records with firmographic data.
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
+- [hookradar-creative-intelligence/](./hookradar-creative-intelligence/) - Research competitor paid ads, TikTok ads, Instagram/TikTok organic videos, AI creative analysis, reports, and creative assets with HookRadar MCP.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
 - [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.

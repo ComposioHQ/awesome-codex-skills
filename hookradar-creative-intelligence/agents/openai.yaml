@@ -1,0 +1,16 @@
+interface:
+  display_name: "HookRadar Creative Intelligence"
+  short_description: "Creative research via HookRadar MCP"
+  brand_color: "#2563EB"
+  default_prompt: "Use $hookradar-creative-intelligence to show top creative winners for my tracked competitors with HookRadar links."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "hookradar"
+      description: "HookRadar MCP server for paid ads, organic videos, reports, and AI creative analysis."
+      transport: "streamable_http"
+      url: "https://mcp.hookradar.net/mcp"
+
+policy:
+  allow_implicit_invocation: true
