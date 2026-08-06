@@ -124,6 +124,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [codex-sms-verification](https://github.com/virtualsms-io/codex-sms-verification) - External repo: real-SIM SMS verification for AI agents via VirtualSMS MCP. 145+ countries, 2000+ services, both hosted (mcp.virtualsms.io) and local stdio transports.
 
 - [email-draft-polish/](./email-draft-polish/) - Draft, rewrite, or condense emails for the right tone and audience.
+- [sequenzy-email-marketing](https://github.com/Sequenzy/skills/tree/main/skills/sequenzy-email-marketing) - External repo: operate Sequenzy email marketing and transactional email workflows from Codex, including authentication, subscribers, campaigns, sequences, templates, and product emails. Install: `npx skills add sequenzy/skills --skill sequenzy-email-marketing`
 - [changelog-generator/](./changelog-generator/) - Create clear changelogs from commits or summaries.
 - [content-research-writer/](./content-research-writer/) - Research and draft content with sourced citations.
 - [diasporic-intelligence](https://github.com/MinistaJazz/diasporic-intelligence) - External repo: source-credit skill for consent-governed lineage AI with attribution, provenance, revocation, and non-impersonation boundaries.
