@@ -108,6 +108,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [linear/](./linear/) - Manage issues, projects, and team workflows in Linear.
 - [meeting-insights-analyzer/](./meeting-insights-analyzer/) - Analyze meeting transcripts for themes, risks, and follow-ups.
 - [meeting-notes-and-actions/](./meeting-notes-and-actions/) - Turn meeting transcripts into summaries with decisions and owner-tagged action items.
+- [ai-meeting](https://github.com/bin1874/ai-meeting-skill) - Run structured AI meetings with Codex and Claude, preserving agent sessions across rounds and producing sourced final reports. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo bin1874/ai-meeting-skill --path ai-meeting --name ai-meeting`
 - [internal-comms/](./internal-comms/) - Craft internal announcements, updates, and stakeholder messaging.
 - [invoice-organizer/](./invoice-organizer/) - Normalize and extract invoice data for tracking and reporting.
 - [notion-knowledge-capture/](./notion-knowledge-capture/) - Convert chats or notes into structured Notion pages with proper linking.
