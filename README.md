@@ -155,6 +155,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
+- [handoff-ds](https://github.com/dazuiba/handoff) - Delegate tasks to DeepSeek V4 without leaving your Codex session. Install: `uv tool install handoff-cli && handoff init`
 
 ## Using Skills in Codex
 
