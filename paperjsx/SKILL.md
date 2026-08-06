@@ -1,11 +1,13 @@
 ---
 name: paperjsx
-description: Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF reports from structured JSON input using PaperJSX.
+description: Generate PPTX presentations from structured JSON using PaperJSX, and guard DOCX, XLSX, and PDF requests until their packages are installable.
 ---
 
 # PaperJSX Document Generation
 
 Generate professional documents from JSON layout specs. PaperJSX is generation-only — it creates new files, it does not edit existing ones.
+
+The standalone npm path is currently verified for PPTX only. For DOCX, XLSX, and PDF, check package metadata before attempting an install or render.
 
 ## Triggers
 
@@ -19,21 +21,24 @@ Use this skill when the user asks to:
 
 ## Install
 
-Install the format-appropriate package:
+Install the standalone PPTX package:
 
 ```bash
-# Presentations
 npm install @paperjsx/json-to-pptx
-
-# Word documents
-npm install @paperjsx/json-to-docx
-
-# Spreadsheets
-npm install @paperjsx/json-to-xlsx
-
-# PDF documents
-npm install @paperjsx/json-to-pdf
 ```
+
+Before using DOCX, XLSX, PDF, or the MCP server packages, verify that their published dependencies no longer contain `workspace:*` entries:
+
+```bash
+npm view @paperjsx/json-to-docx@latest dependencies --json
+npm view @paperjsx/json-to-xlsx@latest dependencies --json
+npm view @paperjsx/json-to-pdf@latest dependencies --json
+npm view @paperjsx/mcp-server@latest dependencies --json
+```
+
+If any dependency value is `workspace:*`, do not run `npm install` for that package in the user's project. Tell the user that the requested PaperJSX format is not currently installable as a standalone npm package, and offer PPTX generation or another document-generation path instead.
+
+If PaperJSX MCP tools are already connected in the tool catalog, you may use those tools directly. The metadata check above is only for installing packages yourself.
 
 ## How it works
 
@@ -68,52 +73,14 @@ fs.writeFileSync("presentation.pptx", buffer);
 console.log("Generated presentation.pptx");
 ```
 
-## Example: DOCX generation
+## Guarded formats
 
-```javascript
-import { renderToDocx } from "@paperjsx/json-to-docx";
-import fs from "node:fs";
+For DOCX, XLSX, and PDF requests, follow this order:
 
-const result = await renderToDocx({
-  type: "DocxDocument",
-  pageSize: "a4",
-  orientation: "portrait",
-  pages: [
-    {
-      elements: [
-        { type: "heading", level: 1, text: "Quarterly Report" },
-        { type: "paragraph", text: "Section content here." }
-      ]
-    }
-  ]
-});
-
-fs.writeFileSync("report.docx", result.buffer);
-console.log("Generated report.docx");
-```
-
-## Example: XLSX generation
-
-```javascript
-import { SpreadsheetEngine } from "@paperjsx/json-to-xlsx";
-import fs from "node:fs";
-
-const spec = {
-  meta: { title: "Revenue Data", creator: "PaperJSX" },
-  sheets: [{
-    name: "Revenue",
-    rows: [
-      { cells: [{ value: "Quarter" }, { value: "Revenue" }] },
-      { cells: [{ value: "Q1 2026" }, { value: 420000 }] },
-      { cells: [{ value: "Q2 2026" }, { value: 510000 }] }
-    ]
-  }]
-};
-
-const buffer = await SpreadsheetEngine.render(spec);
-fs.writeFileSync("revenue.xlsx", buffer);
-console.log("Generated revenue.xlsx");
-```
+1. Use connected PaperJSX MCP tools if they are available.
+2. If no MCP tools are available, run the npm metadata check from the install section.
+3. Only install and call a format package when the metadata check shows concrete dependency versions.
+4. If the package still references `workspace:*`, stop before writing generation code and explain the packaging limitation to the user.
 
 ## Validation
 
@@ -133,4 +100,4 @@ If the engine throws an error, surface the full error message to the user.
 
 ## Schema reference
 
-See `references/json-schema.md` for the complete JSON layout spec schema for all supported formats.
+See `references/json-schema.md` for the complete JSON layout spec schema. Some schemas may describe formats whose standalone npm packages are not currently installable; apply the guarded-format workflow before using those package APIs.
