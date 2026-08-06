@@ -152,6 +152,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
+- [network-optimizer-skill](https://github.com/6Kmfi6HP/network-optimizer-skill) - External repo: safe cross-platform network diagnostics and reversible tuning for Codex, Claude Code, and Agent Skills. Includes macOS/Linux/Windows audits plus Linux BBR and BBR+FQ plan/apply/restore helpers. Install: `codex plugin marketplace add 6Kmfi6HP/network-optimizer-skill && codex plugin add network-optimizer-skill@network-optimizer-skill`
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
