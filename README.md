@@ -102,6 +102,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Productivity & Collaboration
 
+- [one-person-company-os](https://github.com/living-hi/one-person-company-os) - Visual operating cockpit for AI-native solo founders across promise, buyer, product, delivery, cash, learning, and assets. Install: `clawhub install one-person-company-os`
 - [connect/](./connect/) - Connect Codex to 1000+ apps via the Composio CLI for real actions (Slack, GitHub, Notion, etc.).
 - [connect-apps/](./connect-apps/) - Wire up Composio CLI connections for Claude and kick off app workflows from the shell.
 - [issue-triage/](./issue-triage/) - Triage Linear or Jira backlogs and run bug sweeps from the terminal.
