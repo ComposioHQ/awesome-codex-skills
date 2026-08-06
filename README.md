@@ -133,6 +133,8 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Data & Analysis
 
+- [outlit](https://github.com/OutlitAI/outlit-agent-skills/tree/main/skills/outlit) - Access Outlit customer intelligence, timelines, revenue, churn, SQL analytics, and source evidence. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo OutlitAI/outlit-agent-skills --path skills/outlit --name outlit`
+- [outlit-sdk](https://github.com/OutlitAI/outlit-agent-skills/tree/main/skills/outlit-sdk) - Add Outlit SDK tracking for browser, server, native, desktop, identity, consent, billing, and activation flows. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo OutlitAI/outlit-agent-skills --path skills/outlit-sdk --name outlit-sdk`
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
