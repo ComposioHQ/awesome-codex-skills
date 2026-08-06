@@ -129,7 +129,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Data & Analysis
 
-- [suede-creator-skills](https://github.com/JasonColapietro/suede-creator-skills) - External repo: Codex skills for music release metadata linting and Suede rights passport packaging. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo JasonColapietro/suede-creator-skills --path skills/music-release-metadata-linter --name music-release-metadata-linter`
+- [suede-creator-skills](https://github.com/JasonColapietro/suede-creator-skills) - 71 MIT skills with a Codex-native plugin marketplace: multi-agent orchestration, parallel `codex exec` worker fleets, A-F code review, AI evals, CI gates, design, copy, and SEO/AEO/GEO audits. Install: `codex plugin marketplace add JasonColapietro/suede-creator-skills --ref main`
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
