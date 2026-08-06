@@ -117,6 +117,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
+- [quiz-gated-learning-project](https://github.com/ExDevilLee/quiz-gated-learning-project-skill) - External repo: create stateful beginner learning projects with one micro-topic at a time, quiz gates before advancement, and durable README/ROADMAP/STATE artifacts for cross-session continuity. Install: `npx skills add ExDevilLee/quiz-gated-learning-project-skill`
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
 - [Taisly Agent Kit](https://github.com/taisly/agent) - Publish approved short-form videos from Codex with a bundled skill, CLI, and remote MCP server for TikTok, Instagram Reels, YouTube Shorts, X, and Facebook.
 
