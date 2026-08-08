@@ -151,6 +151,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
+- [video-router](https://github.com/Orkas-AI/Orkas-VideoStudio/tree/main/packages/skills/video-router) - Route video briefs to generation, deterministic composition, footage editing, or an end-to-end combination before production starts. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo Orkas-AI/Orkas-VideoStudio --path packages/skills/video-router --name video-router`
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
