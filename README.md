@@ -133,6 +133,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Data & Analysis
 
+- [codex-usage-insights](https://github.com/holooooo/codex-skill-usage) - Analyze local Codex JSONL session logs and render a browser-ready HTML dashboard plus JSON data.
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
