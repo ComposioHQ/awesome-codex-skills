@@ -102,8 +102,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Productivity & Collaboration
 
-- [connect/](./connect/) - Connect Codex to 1000+ apps via the Composio CLI for real actions (Slack, GitHub, Notion, etc.).
-- [connect-apps/](./connect-apps/) - Wire up Composio CLI connections for Claude and kick off app workflows from the shell.
+- [composio](https://github.com/ComposioHQ/composio/tree/next/skills/composio) - Maintained first-party skill for Composio product selection, setup, integration, operation, and debugging.
 - [issue-triage/](./issue-triage/) - Triage Linear or Jira backlogs and run bug sweeps from the terminal.
 - [linear/](./linear/) - Manage issues, projects, and team workflows in Linear.
 - [meeting-insights-analyzer/](./meeting-insights-analyzer/) - Analyze meeting transcripts for themes, risks, and follow-ups.
