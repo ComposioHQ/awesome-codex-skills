@@ -155,6 +155,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
+- [internalcot](https://github.com/morluto/internalcot) - Makes agent reasoning visible as persistent working notes throughout a Codex or Claude Code conversation using an opt-in skill and local CLI. Install: `npx internalcot@latest setup`.
 
 ## Using Skills in Codex
 
