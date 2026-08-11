@@ -85,7 +85,7 @@ For `MiniMax-H3`:
    and `duration`. Text is always required; an image-to-video request adds an `image_url` item
    with the `first_frame` role.
 2. **Poll**: `GET /v2/query/video_generation/{task_id}` until `task.status` is `succeeded` or
-   `failed`.
+   reaches a `failed` or `cancelled` terminal state.
 3. **Download**: On success, download the direct URL from `task.content.url`.
 
 For v1 models, the script submits to `POST /v1/video_generation`, polls

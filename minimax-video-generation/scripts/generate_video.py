@@ -52,7 +52,7 @@ V1_QUERY_PATH = "/v1/query/video_generation"
 V1_RETRIEVE_PATH = "/v1/files/retrieve"
 
 V2_SUCCESS_STATES = {"succeeded"}
-V2_FAILURE_STATES = {"failed"}
+V2_FAILURE_STATES = {"failed", "cancelled"}
 V1_SUCCESS_STATES = {"Success"}
 V1_FAILURE_STATES = {"Fail"}
 V2_MAX_BODY_BYTES = 64 * 1024 * 1024
