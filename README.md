@@ -133,6 +133,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Data & Analysis
 
+- [wechat-mp-downloader](https://github.com/KKK25843/wechat-mp-downloader-skill) - Archive 1-20 WeChat Official Accounts over a date range as Markdown with local images, title filters, resumable state, and no cookie export. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo KKK25843/wechat-mp-downloader-skill --path skills/wechat-mp-downloader --name wechat-mp-downloader`
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
