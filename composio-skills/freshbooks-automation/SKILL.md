@@ -1,5 +1,5 @@
 ---
-name: FreshBooks Automation
+name: freshbooks-automation
 description: "FreshBooks Automation: manage businesses, projects, time tracking, and billing in FreshBooks cloud accounting"
 requires:
   mcp: [rube]

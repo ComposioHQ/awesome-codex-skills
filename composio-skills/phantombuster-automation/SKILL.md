@@ -1,5 +1,5 @@
 ---
-name: PhantomBuster Automation
+name: phantombuster-automation
 description: "Automate lead generation, web scraping, and social media data extraction workflows through PhantomBuster's cloud platform via Composio"
 requires:
   mcp:

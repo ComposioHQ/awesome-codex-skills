@@ -1,5 +1,5 @@
 ---
-name: GroqCloud Automation
+name: groqcloud-automation
 description: "Automate AI inference, chat completions, audio translation, and TTS voice management through GroqCloud's high-performance API via Composio"
 requires:
   mcp:

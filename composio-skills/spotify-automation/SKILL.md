@@ -1,5 +1,5 @@
 ---
-name: Spotify Automation
+name: spotify-automation
 description: "Automate Spotify workflows including playlist management, music search, playback control, and user profile access via Composio"
 requires:
   mcp:

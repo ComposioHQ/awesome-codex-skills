@@ -1,5 +1,5 @@
 ---
-name: Lever Automation
+name: lever-automation
 description: "Automate recruiting workflows in Lever ATS -- manage opportunities, job postings, requisitions, pipeline stages, and candidate tags through the Composio Lever integration."
 requires:
   mcp:

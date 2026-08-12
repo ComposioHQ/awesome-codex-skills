@@ -1,5 +1,5 @@
 ---
-name: Mistral AI Automation
+name: mistral-ai-automation
 description: "Automate Mistral AI operations -- manage files and libraries, upload documents for fine-tuning, batch processing, and OCR, track fine-tuning jobs, and build RAG pipelines via the Composio MCP integration."
 requires:
   mcp:

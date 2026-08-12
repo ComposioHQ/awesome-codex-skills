@@ -1,5 +1,5 @@
 ---
-name: Cloudinary Automation
+name: cloudinary-automation
 description: "Automate Cloudinary media management including folder organization, upload presets, asset lookup, transformations, and usage monitoring through natural language commands"
 requires:
   mcp:

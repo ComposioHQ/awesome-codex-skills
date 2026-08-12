@@ -1,5 +1,5 @@
 ---
-name: Clockify Automation
+name: clockify-automation
 description: "Automate time tracking workflows in Clockify -- create and manage time entries, workspaces, and users through natural language commands."
 requires:
   mcp:

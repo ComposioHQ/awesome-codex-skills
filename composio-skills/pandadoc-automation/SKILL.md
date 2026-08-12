@@ -1,5 +1,5 @@
 ---
-name: PandaDoc Automation
+name: pandadoc-automation
 description: "Automate document workflows with PandaDoc -- create documents from files, manage contacts, organize folders, set up webhooks, create templates, and track document status through the Composio PandaDoc integration."
 requires:
   mcp:

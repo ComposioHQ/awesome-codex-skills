@@ -1,5 +1,5 @@
 ---
-name: Replicate Automation
+name: replicate-automation
 description: "Automate Replicate AI model operations -- run predictions, upload files, inspect model schemas, list versions, and manage prediction history via the Composio MCP integration."
 requires:
   mcp:

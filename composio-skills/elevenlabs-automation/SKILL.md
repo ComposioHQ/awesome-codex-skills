@@ -1,5 +1,5 @@
 ---
-name: ElevenLabs Automation
+name: elevenlabs-automation
 description: "Automate ElevenLabs text-to-speech workflows -- generate speech from text, browse and inspect voices, check subscription limits, list models, stream audio, and retrieve history via the Composio MCP integration."
 requires:
   mcp:

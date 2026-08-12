@@ -1,5 +1,5 @@
 ---
-name: SEMrush Automation
+name: semrush-automation
 description: "Automate SEO analysis with SEMrush -- research keywords, analyze domain organic rankings, audit backlinks, assess keyword difficulty, and discover related terms through the Composio SEMrush integration."
 requires:
   mcp:

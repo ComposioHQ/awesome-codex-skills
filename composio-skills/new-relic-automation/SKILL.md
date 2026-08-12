@@ -1,5 +1,5 @@
 ---
-name: New Relic Automation
+name: new-relic-automation
 description: "Automate New Relic observability workflows -- manage alert policies, notification channels, alert conditions, and monitor applications and browser apps via the Composio MCP integration."
 requires:
   mcp:

@@ -1,5 +1,5 @@
 ---
-name: Lemlist Automation
+name: lemlist-automation
 description: "Automate Lemlist multichannel outreach -- manage campaigns, enroll leads, add personalization variables, export campaign data, and handle unsubscribes via the Composio MCP integration."
 requires:
   mcp:

@@ -1,5 +1,5 @@
 ---
-name: Customer.io Automation
+name: customerio-automation
 description: "Automate customer engagement workflows including broadcast triggers, message analytics, segment management, and newsletter tracking through Customer.io via Composio"
 requires:
   mcp:

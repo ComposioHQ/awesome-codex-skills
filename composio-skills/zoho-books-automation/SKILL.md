@@ -1,5 +1,5 @@
 ---
-name: Zoho Books Automation
+name: zoho-books-automation
 description: "Automate Zoho Books accounting workflows including invoice creation, bill management, contact lookup, payment tracking, and multi-organization support through natural language commands"
 requires:
   mcp:

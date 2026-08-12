@@ -1,5 +1,5 @@
 ---
-name: MailerLite Automation
+name: mailerlite-automation
 description: "Automate email marketing workflows including subscriber management, campaign analytics, group segmentation, and account monitoring through MailerLite via Composio"
 requires:
   mcp:

@@ -1,5 +1,5 @@
 ---
-name: OpenAI Automation
+name: openai-automation
 description: "Automate OpenAI API operations -- generate responses with multimodal and structured output support, create embeddings, generate images, and list models via the Composio MCP integration."
 requires:
   mcp:
