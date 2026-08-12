@@ -114,6 +114,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [notion-meeting-intelligence/](./notion-meeting-intelligence/) - Prepare meeting materials with Notion context plus Codex research.
 - [notion-research-documentation/](./notion-research-documentation/) - Synthesize multiple Notion sources into briefs, comparisons, or reports with citations.
 - [notion-spec-to-implementation/](./notion-spec-to-implementation/) - Turn Notion specs into implementation plans, tasks, and progress tracking.
+- [Product2Code](https://github.com/lvhe-byte/Product2Code) - AI product and project management workflow for Codex that turns software ideas into confirmed requirements, risk-validated architecture, managed implementation, independent review, and explicit owner acceptance. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo lvhe-byte/Product2Code --path skills/product-to-code --name product-to-code`
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
