@@ -80,8 +80,26 @@ def _parse_github_url(
     return owner, repo, ref, subpath or None
 
 
+def _quote_segment(value: str) -> str:
+    """Percent-encode a single URL path segment."""
+    if not value:
+        raise InstallError("Empty URL path segment.")
+    return urllib.parse.quote(value, safe="")
+
+
+def _quote_ref(ref: str) -> str:
+    """Percent-encode a git ref, keeping the slashes in names like feature/x."""
+    parts = ref.split("/")
+    if any(part in ("", ".", "..") for part in parts):
+        raise InstallError(f"Invalid git ref: {ref}")
+    return "/".join(_quote_segment(part) for part in parts)
+
+
 def _download_repo_zip(owner: str, repo: str, ref: str, dest_dir: str) -> str:
-    zip_url = f"https://codeload.github.com/{owner}/{repo}/zip/{ref}"
+    zip_url = (
+        f"https://codeload.github.com/{_quote_segment(owner)}/"
+        f"{_quote_segment(repo)}/zip/{_quote_ref(ref)}"
+    )
     zip_path = os.path.join(dest_dir, "repo.zip")
     try:
         payload = _request(zip_url)
@@ -100,7 +118,9 @@ def _download_repo_zip(owner: str, repo: str, ref: str, dest_dir: str) -> str:
 
 
 def _github_default_branch(owner: str, repo: str) -> str:
-    api_url = f"https://api.github.com/repos/{owner}/{repo}"
+    api_url = (
+        f"https://api.github.com/repos/{_quote_segment(owner)}/{_quote_segment(repo)}"
+    )
     try:
         payload = _request(api_url)
     except urllib.error.HTTPError as exc:
