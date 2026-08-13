@@ -149,6 +149,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
+- [Lians Memory](https://github.com/Lians-ai/Lians/tree/master/plugins/lians-memory) - Local-first, project-scoped long-term memory for Codex. Its plugin injects bounded, score-gated recall before prompts and exposes compact `remember` and `recall` tools while treating recalled content as untrusted data. [Install from GitHub](https://github.com/Lians-ai/Lians/tree/master/plugins/lians-memory#install-from-github).
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
