@@ -146,6 +146,44 @@ def test_non_slug_directory_is_a_warning_not_an_error(repo):
     assert "is not a lowercase hyphenated slug" in str(report.warnings[0])
 
 
+def test_directories_normalising_to_the_same_slug_are_reported(repo):
+    collection = repo / "composio-skills"
+    for name in ("zoho-mail-automation", "zoho_mail-automation"):
+        write_skill(
+            collection,
+            name,
+            contents=f"---\nname: {name}\ndescription: Automates Zoho Mail.\n---\n",
+        )
+    write_readme(repo, ["demo-skill", "composio-skills"])
+
+    report = validate_skills.validate(str(repo))
+
+    assert [str(p) for p in report.warnings] == [
+        "composio-skills/zoho_mail-automation: directory name "
+        "'zoho_mail-automation' is not a lowercase hyphenated slug",
+        "composio-skills/zoho_mail-automation: duplicates skill "
+        "'composio-skills/zoho-mail-automation' (both normalise to the same slug)",
+    ]
+
+
+def test_same_slug_in_different_collections_is_not_a_duplicate(repo):
+    write_skill(
+        repo,
+        "linear",
+        contents="---\nname: linear\ndescription: Manages Linear issues.\n---\n",
+    )
+    write_skill(
+        repo / "composio-skills",
+        "linear",
+        contents="---\nname: linear\ndescription: Automates Linear via Rube.\n---\n",
+    )
+    write_readme(repo, ["demo-skill", "linear", "composio-skills"])
+
+    report = validate_skills.validate(str(repo))
+
+    assert report.problems == []
+
+
 def test_oversized_description_is_an_error(repo):
     long_description = "x" * (validate_skills.MAX_DESCRIPTION_LENGTH + 1)
     write_skill(

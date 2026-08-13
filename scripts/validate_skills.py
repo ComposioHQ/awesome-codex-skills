@@ -212,11 +212,38 @@ def validate_readme(root: str, skill_dirs: list[str], report: Report) -> None:
             report.add("README.md", f"link './{name}' points at a path that does not exist")
 
 
+def validate_uniqueness(skill_dirs: list[str], report: Report) -> None:
+    """Two directories that differ only in separators are the same skill twice.
+
+    A bulk import once added 26 toolkits under both `foo_bar-automation` and
+    `foo-bar-automation`; both were loaded, and in some cases they contradicted
+    each other. Reported as a warning while those duplicates are still in the
+    tree; promote to an error once they are removed.
+    """
+    by_slug: dict[str, list[str]] = {}
+    for rel_path in skill_dirs:
+        parent, _, name = rel_path.rpartition("/")
+        slug = name.replace("_", "-").strip("-").lower()
+        by_slug.setdefault(f"{parent}/{slug}", []).append(rel_path)
+
+    for duplicates in by_slug.values():
+        if len(duplicates) < 2:
+            continue
+        first, *rest = sorted(duplicates)
+        for other in rest:
+            report.add(
+                other,
+                f"duplicates skill '{first}' (both normalise to the same slug)",
+                WARNING,
+            )
+
+
 def validate(root: str) -> Report:
     report = Report()
     skill_dirs = discover_skill_dirs(root)
     for rel_path in skill_dirs:
         validate_skill(root, rel_path, report)
+    validate_uniqueness(skill_dirs, report)
     validate_readme(root, skill_dirs, report)
     return report
 

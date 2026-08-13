@@ -217,7 +217,8 @@ It enforces that each skill directory:
 - contains a `SKILL.md` that starts with a YAML frontmatter block,
 - declares a `name` that is a lowercase hyphenated slug **matching the directory name**,
 - declares a non-empty `description` of at most 1024 characters (descriptions are always loaded into context, so keep them tight),
-- is linked from the README index, and that every README skill link resolves to a real directory.
+- is linked from the README index, and that every README skill link resolves to a real directory,
+- does not duplicate an existing skill — two directories that differ only in `_` vs `-` are the same skill twice.
 
 Use `--json` for machine-readable output and `--strict` to also fail on warnings. The test suite lives in `tests/` and runs with `python -m pytest tests`.
 
