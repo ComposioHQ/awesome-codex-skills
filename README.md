@@ -70,6 +70,7 @@ The installer fetches the skill and places it in `$CODEX_HOME/skills/<skill-name
   - [Communication & Writing](#communication--writing)
   - [Data & Analysis](#data--analysis)
   - [Meta & Utilities](#meta--utilities)
+  - [App Integrations](#app-integrations)
 - [Using Skills in Codex](#using-skills-in-codex)
 - [Creating Skills](#creating-skills)
 - [Contributing](#contributing)
@@ -156,6 +157,10 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
 
+### App Integrations
+
+- [composio-skills/](./composio-skills/) - 800+ per-app automation skills (Slack, Notion, HubSpot, Stripe, Jira, and more) that drive third-party APIs through the Composio Rube MCP server. Install a single subfolder, e.g. `python skill-installer/scripts/install-skill-from-github.py --repo ComposioHQ/awesome-codex-skills --path composio-skills/slackbot-automation`.
+
 ## Using Skills in Codex
 
 - Skills live in `$CODEX_HOME/skills` (default `~/.codex/skills`). Each subfolder needs a `SKILL.md` with `name` and `description` frontmatter.
@@ -198,6 +203,24 @@ Best practices:
 ## Contributing
 
 PRs welcome. Add real, reusable skills, keep descriptions precise, and include any needed scripts or references. If you add new skills, ensure the `description` clearly states when Codex should trigger and test that metadata fits within context limits.
+
+### Validate before you open a PR
+
+Every skill in this repo is checked in CI. Run the same check locally (Python 3.10+, no dependencies):
+
+```bash
+python scripts/validate_skills.py
+```
+
+It enforces that each skill directory:
+
+- contains a `SKILL.md` that starts with a YAML frontmatter block,
+- declares a `name` that is a lowercase hyphenated slug **matching the directory name**,
+- declares a non-empty `description` of at most 1024 characters (descriptions are always loaded into context, so keep them tight),
+- is linked from the README index, and that every README skill link resolves to a real directory,
+- does not duplicate an existing skill — two directories that differ only in `_` vs `-` are the same skill twice.
+
+Use `--json` for machine-readable output and `--strict` to also fail on warnings. The test suite lives in `tests/` and runs with `python -m pytest tests`.
 
 ## Join the Community
 

@@ -1,5 +1,5 @@
 ---
-name: QuickBooks Automation
+name: quickbooks-automation
 description: "QuickBooks Automation: manage invoices, customers, accounts, and payments in QuickBooks Online for streamlined bookkeeping"
 requires:
   mcp: [rube]

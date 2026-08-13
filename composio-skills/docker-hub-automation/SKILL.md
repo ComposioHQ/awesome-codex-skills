@@ -1,5 +1,5 @@
 ---
-name: Docker Hub Automation
+name: docker-hub-automation
 description: "Automate Docker Hub operations -- manage organizations, repositories, teams, members, and webhooks via the Composio MCP integration."
 requires:
   mcp:

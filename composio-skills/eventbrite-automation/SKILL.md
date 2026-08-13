@@ -1,5 +1,5 @@
 ---
-name: Eventbrite Automation
+name: eventbrite-automation
 description: "Automate Eventbrite event management, attendee tracking, organization discovery, and category browsing through natural language commands"
 requires:
   mcp:

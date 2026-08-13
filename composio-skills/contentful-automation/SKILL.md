@@ -1,5 +1,5 @@
 ---
-name: Contentful Automation
+name: contentful-automation
 description: "Automate headless CMS operations in Contentful -- list spaces, retrieve space metadata, and update space configurations through the Composio Contentful integration."
 requires:
   mcp:

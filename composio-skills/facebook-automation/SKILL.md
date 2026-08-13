@@ -1,5 +1,5 @@
 ---
-name: Facebook Automation
+name: facebook-automation
 description: "Automate Facebook Page management including post creation, scheduling, video uploads, Messenger conversations, and audience engagement via Composio"
 requires:
   mcp:

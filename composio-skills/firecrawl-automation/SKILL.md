@@ -1,5 +1,5 @@
 ---
-name: Firecrawl Automation
+name: firecrawl-automation
 description: "Automate web crawling and data extraction with Firecrawl -- scrape pages, crawl sites, extract structured data, batch scrape URLs, and map website structures through the Composio Firecrawl integration."
 requires:
   mcp:

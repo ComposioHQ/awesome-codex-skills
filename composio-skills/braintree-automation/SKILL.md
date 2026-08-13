@@ -1,5 +1,5 @@
 ---
-name: Braintree Automation
+name: braintree-automation
 description: "Braintree Automation: manage payment processing via Stripe-compatible tools for customers, subscriptions, payment methods, and transactions"
 requires:
   mcp: [rube]

@@ -1,5 +1,5 @@
 ---
-name: Webex Automation
+name: webex-automation
 description: "Automate Cisco Webex messaging, rooms, teams, webhooks, and people management through natural language commands"
 requires:
   mcp:

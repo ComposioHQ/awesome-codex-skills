@@ -1,5 +1,5 @@
 ---
-name: Snowflake Automation
+name: snowflake-automation
 description: "Automate Snowflake data warehouse operations -- list databases, schemas, and tables, execute SQL statements, and manage data workflows via the Composio MCP integration."
 requires:
   mcp:

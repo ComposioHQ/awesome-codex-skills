@@ -1,5 +1,5 @@
 ---
-name: Omnisend Automation
+name: omnisend-automation
 description: "Automate ecommerce marketing workflows including contact management, bulk operations, and subscriber segmentation through Omnisend via Composio"
 requires:
   mcp:

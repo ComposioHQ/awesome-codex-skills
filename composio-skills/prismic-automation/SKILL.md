@@ -1,5 +1,5 @@
 ---
-name: Prismic Automation
+name: prismic-automation
 description: "Automate headless CMS operations in Prismic -- query documents, search content, retrieve custom types, and manage repository refs through the Composio Prismic integration."
 requires:
   mcp:

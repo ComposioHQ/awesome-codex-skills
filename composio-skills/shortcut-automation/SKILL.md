@@ -1,5 +1,5 @@
 ---
-name: Shortcut Automation
+name: shortcut-automation
 description: "Automate project management workflows in Shortcut -- create stories, manage tasks, track epics, and organize workflows through natural language commands."
 requires:
   mcp:

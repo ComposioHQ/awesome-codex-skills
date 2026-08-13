@@ -1,5 +1,5 @@
 ---
-name: Jotform Automation
+name: jotform-automation
 description: "Automate Jotform form listing, user management, activity history, folder organization, and plan inspection through natural language commands"
 requires:
   mcp:

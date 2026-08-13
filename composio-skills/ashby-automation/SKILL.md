@@ -1,5 +1,5 @@
 ---
-name: Ashby Automation
+name: ashby-automation
 description: "Automate recruiting and hiring workflows in Ashby -- manage candidates, jobs, applications, interviews, and notes through natural language commands."
 requires:
   mcp:

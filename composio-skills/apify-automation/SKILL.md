@@ -1,5 +1,5 @@
 ---
-name: Apify Automation
+name: apify-automation
 description: "Automate web scraping and data extraction with Apify -- run Actors, manage datasets, create reusable tasks, and retrieve crawl results through the Composio Apify integration."
 requires:
   mcp:

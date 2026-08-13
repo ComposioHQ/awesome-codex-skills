@@ -1,5 +1,5 @@
 ---
-name: Gorgias Automation
+name: gorgias-automation
 description: "Automate e-commerce customer support workflows in Gorgias -- manage tickets, customers, tags, and teams through natural language commands."
 requires:
   mcp:

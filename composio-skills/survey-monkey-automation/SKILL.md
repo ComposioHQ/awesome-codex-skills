@@ -1,5 +1,5 @@
 ---
-name: SurveyMonkey Automation
+name: survey-monkey-automation
 description: "Automate SurveyMonkey survey creation, response collection, collector management, and survey discovery through natural language commands"
 requires:
   mcp:

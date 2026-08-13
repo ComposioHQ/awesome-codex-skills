@@ -1,5 +1,5 @@
 ---
-name: RingCentral Automation
+name: ring-central-automation
 description: "RingCentral automation via Rube MCP -- toolkit not currently available in Composio; no RING_CENTRAL_ tools found"
 requires:
   mcp:

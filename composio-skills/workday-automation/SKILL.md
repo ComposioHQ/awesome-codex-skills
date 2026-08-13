@@ -1,5 +1,5 @@
 ---
-name: Workday Automation
+name: workday-automation
 description: "Automate HR operations in Workday -- manage workers, time off requests, absence balances, and employee data through natural language commands."
 requires:
   mcp:
