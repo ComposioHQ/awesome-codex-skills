@@ -1,20 +1,20 @@
 ---
-name: -2chat-automation
-description: "Automate 2chat tasks via Rube MCP (Composio). Always search tools first for current schemas."
+name: 21risk-automation
+description: "Automate 21risk tasks via Rube MCP (Composio). Always search tools first for current schemas."
 requires:
   mcp: [rube]
 ---
 
-# 2chat Automation via Rube MCP
+# 21risk Automation via Rube MCP
 
-Automate 2chat operations through Composio's 2chat toolkit via Rube MCP.
+Automate 21risk operations through Composio's 21risk toolkit via Rube MCP.
 
-**Toolkit docs**: [composio.dev/toolkits/_2chat](https://composio.dev/toolkits/_2chat)
+**Toolkit docs**: [composio.dev/toolkits/_21risk](https://composio.dev/toolkits/_21risk)
 
 ## Prerequisites
 
 - Rube MCP must be connected (RUBE_SEARCH_TOOLS available)
-- Active 2chat connection via `RUBE_MANAGE_CONNECTIONS` with toolkit `_2chat`
+- Active 21risk connection via `RUBE_MANAGE_CONNECTIONS` with toolkit `_21risk`
 - Always call `RUBE_SEARCH_TOOLS` first to get current tool schemas
 
 ## Setup
@@ -22,7 +22,7 @@ Automate 2chat operations through Composio's 2chat toolkit via Rube MCP.
 **Get Rube MCP**: Add `https://rube.app/mcp` as an MCP server in your client configuration. No API keys needed — just add the endpoint and it works.
 
 1. Verify Rube MCP is available by confirming `RUBE_SEARCH_TOOLS` responds
-2. Call `RUBE_MANAGE_CONNECTIONS` with toolkit `_2chat`
+2. Call `RUBE_MANAGE_CONNECTIONS` with toolkit `_21risk`
 3. If connection is not ACTIVE, follow the returned auth link to complete setup
 4. Confirm connection status shows ACTIVE before running any workflows
 
@@ -32,7 +32,7 @@ Always discover available tools before executing workflows:
 
 ```
 RUBE_SEARCH_TOOLS
-queries: [{use_case: "2chat operations", known_fields: ""}]
+queries: [{use_case: "21risk operations", known_fields: ""}]
 session: {generate_id: true}
 ```
 
@@ -44,7 +44,7 @@ This returns available tool slugs, input schemas, recommended execution plans, a
 
 ```
 RUBE_SEARCH_TOOLS
-queries: [{use_case: "your specific 2chat task"}]
+queries: [{use_case: "your specific 21risk task"}]
 session: {id: "existing_session_id"}
 ```
 
@@ -52,7 +52,7 @@ session: {id: "existing_session_id"}
 
 ```
 RUBE_MANAGE_CONNECTIONS
-toolkits: ["_2chat"]
+toolkits: ["_21risk"]
 session_id: "your_session_id"
 ```
 
@@ -81,8 +81,8 @@ session_id: "your_session_id"
 
 | Operation | Approach |
 |-----------|----------|
-| Find tools | `RUBE_SEARCH_TOOLS` with 2chat-specific use case |
-| Connect | `RUBE_MANAGE_CONNECTIONS` with toolkit `_2chat` |
+| Find tools | `RUBE_SEARCH_TOOLS` with 21risk-specific use case |
+| Connect | `RUBE_MANAGE_CONNECTIONS` with toolkit `_21risk` |
 | Execute | `RUBE_MULTI_EXECUTE_TOOL` with discovered tool slugs |
 | Bulk ops | `RUBE_REMOTE_WORKBENCH` with `run_composio_tool()` |
 | Full schema | `RUBE_GET_TOOL_SCHEMAS` for tools with `schemaRef` |
