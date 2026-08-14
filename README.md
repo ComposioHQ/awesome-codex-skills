@@ -114,6 +114,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [notion-meeting-intelligence/](./notion-meeting-intelligence/) - Prepare meeting materials with Notion context plus Codex research.
 - [notion-research-documentation/](./notion-research-documentation/) - Synthesize multiple Notion sources into briefs, comparisons, or reports with citations.
 - [notion-spec-to-implementation/](./notion-spec-to-implementation/) - Turn Notion specs into implementation plans, tasks, and progress tracking.
+- [using-lwc](https://github.com/JanYork/llm-wiki-cli/tree/main/skills/using-lwc) - Persistent, source-grounded project memory for Codex with bounded recall, citations, atomic changesets, and optional document and code graphs. Install: `npx skills add JanYork/llm-wiki-cli --skill using-lwc`
 - [support-ticket-triage/](./support-ticket-triage/) - Triage customer support tickets with categories, priority, next actions, and draft replies.
 - [file-organizer/](./file-organizer/) - Organize, rename, and tidy files to keep workspaces clean.
 - [paperjsx/](./paperjsx/) - Generate PPTX presentations, DOCX documents, XLSX spreadsheets, and PDF invoices/reports/charts from structured JSON. Runs locally via `@paperjsx/mcp-server` — no API key, no network calls.
