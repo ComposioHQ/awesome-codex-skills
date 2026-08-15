@@ -1,0 +1,4 @@
+interface:
+  display_name: "流光斑斓 UI 工坊"
+  short_description: "制作参数化流光白与斑斓黑工作台、截图验证与实测报告"
+  default_prompt: "Use $liuguang-banlan-ui to build a parameterized UI in the 流光溢彩白 or 五彩斑斓黑 style."

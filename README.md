@@ -151,6 +151,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
+- [liuguang-banlan-ui/](./liuguang-banlan-ui/) - Build parameterized iridescent-white and colorful-black workbenches with OKLCH, WebGL/CSS fallback, screenshot checks, and color-intensity reports.
 - [video-downloader/](./video-downloader/) - Download and prepare videos for offline review.
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
