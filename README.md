@@ -120,6 +120,8 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [skill-share/](./skill-share/) - Share skills and reusable instructions across teammates.
 - [Taisly Agent Kit](https://github.com/taisly/agent) - Publish approved short-form videos from Codex with a bundled skill, CLI, and remote MCP server for TikTok, Instagram Reels, YouTube Shorts, X, and Facebook.
 
+- [codex-yi](https://github.com/alex12138356/codex-yi-skill) - Multi-thread Codex memory system: shared knowledge base, hub dispatcher, report-back log and SESSION_LOG resume to survive the 400 cutoff.
+
 ### Communication & Writing
 - [codex-sms-verification](https://github.com/virtualsms-io/codex-sms-verification) - External repo: real-SIM SMS verification for AI agents via VirtualSMS MCP. 145+ countries, 2000+ services, both hosted (mcp.virtualsms.io) and local stdio transports.
 
