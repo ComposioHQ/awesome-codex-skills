@@ -133,6 +133,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Data & Analysis
 
+- [DeepRead](https://github.com/xiehuan123/dsh-deepread) - Evidence-first deep reading for articles, books, PDFs, and document sets. Traces claims to evidence and source locations, marks uncertainty, and produces knowledge maps or Feynman review plans. Install: `npx skills@latest add xiehuan123/dsh-deepread`
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
