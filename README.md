@@ -63,6 +63,7 @@ The installer fetches the skill and places it in `$CODEX_HOME/skills/<skill-name
 ## Contents
 
 - [Bernstein](https://github.com/chernistry/bernstein) - Multi-agent orchestrator with Codex CLI adapter. Runs parallel Codex agents in isolated git worktrees with quality gates.
+- [SpineCodex](https://github.com/GhabiX/SpineCodex) - Enhanced Codex CLI for long-running tasks: 10× effective context via SpineJIT context-tree compilation, recursive subagent scaling on demand, and 89% more tasks resolved at 27% lower cost on SWE-Milestone.
 - [What Are Codex Skills?](#what-are-codex-skills)
 - [Skills](#skills)
   - [Development & Code Tools](#development--code-tools)
