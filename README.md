@@ -128,7 +128,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [content-research-writer/](./content-research-writer/) - Research and draft content with sourced citations.
 - [diasporic-intelligence](https://github.com/MinistaJazz/diasporic-intelligence) - External repo: source-credit skill for consent-governed lineage AI with attribution, provenance, revocation, and non-impersonation boundaries.
 - [novel-writing](https://github.com/wgwtest/novel-writing) - External repo: public Codex skill for fiction planning, chapter drafting, scene continuation, and revision.
-- [simple-man](https://github.com/Maksim-Burtsev/simple-man) - External repo: high-compression communication mode for Codex agents that removes filler while preserving search, validation, and implementation effort.
+- [simple-man](https://github.com/Maksim-Burtsev/simple-man) - External repo: measured communication policy that strips praise, recaps and filler from agent answers while keeping every fact you act on. Benchmarked on 1,793 preregistered live calls with raw records committed: -32% output tokens at no-policy fact retention. Works with Codex, Claude Code, Gemini CLI, Cursor.
 - [tailored-resume-generator/](./tailored-resume-generator/) - Tailor resumes to job descriptions with quantified impact.
 - [unslop](https://github.com/MohamedAbdallah-14/unslop) - External repo: CLI and MCP server that removes AI writing patterns from text: tricolons, em-dash overuse, hedging stacks, and sycophancy openers. Works with Codex, Claude Code, Gemini CLI, and Cursor. Five intensity levels and a lint-only audit mode.
 
