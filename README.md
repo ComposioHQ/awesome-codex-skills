@@ -155,6 +155,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [template-skill/](./template-skill/) - Starter template for building new skills.
 - [skill-installer/](./skill-installer/) - Helper scripts to install skills from curated lists or GitHub paths.
 - [skill-creator/](./skill-creator/) - Guidance for building effective Codex skills with progressive disclosure.
+- [repo-cover](https://github.com/sjh9714/repo-cover) - External repo: design GitHub social-preview cards (og:image, 1280x640) as one self-contained HTML file with four editorial moods, CJK-first typography, and deterministic design checks.
 
 ## Using Skills in Codex
 
