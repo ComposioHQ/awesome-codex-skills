@@ -68,6 +68,7 @@ The installer fetches the skill and places it in `$CODEX_HOME/skills/<skill-name
   - [Development & Code Tools](#development--code-tools)
   - [Productivity & Collaboration](#productivity--collaboration)
   - [Communication & Writing](#communication--writing)
+  - [Culture & Lifestyle](#culture--lifestyle)
   - [Data & Analysis](#data--analysis)
   - [Meta & Utilities](#meta--utilities)
 - [Using Skills in Codex](#using-skills-in-codex)
@@ -130,6 +131,10 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [novel-writing](https://github.com/wgwtest/novel-writing) - External repo: public Codex skill for fiction planning, chapter drafting, scene continuation, and revision.
 - [tailored-resume-generator/](./tailored-resume-generator/) - Tailor resumes to job descriptions with quantified impact.
 - [unslop](https://github.com/MohamedAbdallah-14/unslop) - External repo: CLI and MCP server that removes AI writing patterns from text: tricolons, em-dash overuse, hedging stacks, and sycophancy openers. Works with Codex, Claude Code, Gemini CLI, and Cursor. Five intensity levels and a lint-only audit mode.
+
+### Culture & Lifestyle
+
+- [tung-shing-almanac](https://github.com/yonlandwu/tung-shing-almanac-skill) - Chinese Tung Shing (通勝) almanac queries: auspicious dates for weddings, moving, business launches & store openings, contract signings, renovations, C-sections and more; Yi/Ji hour pillars, zodiac clash, 24 solar terms, daily fortunes. JPL DE440s astronomical precision (1900–2100) arbitrated by the 1739 imperial Xie Ji Bian Fang Shu canon, backed by the free 12Zodiacs.com API. Install: `npx skills add yonlandwu/tung-shing-almanac-skill`
 
 ### Data & Analysis
 
