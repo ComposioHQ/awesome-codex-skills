@@ -104,6 +104,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 - [connect/](./connect/) - Connect Codex to 1000+ apps via the Composio CLI for real actions (Slack, GitHub, Notion, etc.).
 - [connect-apps/](./connect-apps/) - Wire up Composio CLI connections for Claude and kick off app workflows from the shell.
+- [famulor-skill](https://github.com/bekservice/Famulor-Skill/tree/main/skills/famulor-skill) - Operate Famulor assistants, omnichannel history, calls, campaigns, messaging, knowledge, and automations through its hosted MCP server. Trigger: when a request needs actual Famulor workspace data or actions. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo bekservice/Famulor-Skill --path skills/famulor-skill --name famulor-skill`
 - [issue-triage/](./issue-triage/) - Triage Linear or Jira backlogs and run bug sweeps from the terminal.
 - [linear/](./linear/) - Manage issues, projects, and team workflows in Linear.
 - [meeting-insights-analyzer/](./meeting-insights-analyzer/) - Analyze meeting transcripts for themes, risks, and follow-ups.
