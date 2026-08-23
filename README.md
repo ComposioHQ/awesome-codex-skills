@@ -133,6 +133,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Data & Analysis
 
+- [Copycat Skills](https://github.com/canhta/copycat-skills) - Turn app ideas and product links into evidence-backed mobile app decisions through competitor discovery, review mining, and separate Blue/Red evaluation. Install: `gh skill install canhta/copycat-skills --all --agent codex --scope user`
 - [spreadsheet-formula-helper/](./spreadsheet-formula-helper/) - Write and debug spreadsheet formulas, pivots, and array formulas.
 - [competitive-ads-extractor/](./competitive-ads-extractor/) - Analyze competitor ads and extract structured insights.
 - [datadog-logs/](./datadog-logs/) - Filter Datadog logs from the shell via the Composio CLI, with JSON-friendly output and digest workflows.
