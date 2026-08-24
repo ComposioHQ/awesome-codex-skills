@@ -99,6 +99,10 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [AuraKit](https://github.com/smorky850612/Aurakit) - All-in-one skill framework: 46 modes, 23 sub-agents, 6-layer OWASP security, 10 lifecycle hooks, ~55% token savings. Install: `npx @smorky85/aurakit`
 - [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) - Governed Codex skill harness for staged, test-driven work: routes 340+ skills through requirement freeze, plan approval, execution, verification evidence, and cross-session memory.
 - [polywave](https://github.com/blackwell-systems/polywave-codex) - Parallel agent coordination with structural merge safety. Scout decomposes, Wave agents implement in isolated worktrees with disjoint file ownership. Same protocol on Claude Code and Codex.
+- [engineering-decision-governor](https://github.com/Ghost011118/engineering-decision-governor) - Govern autonomous engineering execution with evidence-first defect triage, bounded auto-fixes, and explicit owner decision and release-risk boundaries.
+- [project-context-governor](https://github.com/Ghost011118/project-context-governor) - Maintain low-cost, evidence-backed project context across Codex sessions and report stale, conflicting, or unsupported conclusions.
+- [project-state-governor](https://github.com/Ghost011118/project-state-governor) - Maintain evidence-backed canonical project state across sessions, branches, reviews, and research cycles, with completion gates and branch-aware reconciliation.
+- [sol-hierarchical-orchestrator](https://github.com/Ghost011118/sol-hierarchical-orchestrator) - Orchestrate SOL, TERRA, and LUNA roles with adaptive evidence-based routing, bounded authority, task packets, ledgers, and verification gates.
 
 ### Productivity & Collaboration
 
