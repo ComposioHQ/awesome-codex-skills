@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title" viewBox="0 0 128 128">
+  <title id="title">Spec-Driven Loop icon</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6d5ef8"/>
+      <stop offset="1" stop-color="#31d8b5"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="#11152b"/>
+  <path d="M30 35h68M30 64h44M30 93h68" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="91" cy="64" r="19" fill="#11152b" stroke="#fff" stroke-width="8"/>
+  <path d="M86 64l4 4 8-10" fill="none" stroke="#31d8b5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
