@@ -1,0 +1,10 @@
+interface:
+  display_name: "Spec-Driven Loop"
+  short_description: "Clarify, specify, coordinate agents, and judge delivery"
+  default_prompt: "Use $spec-driven-loop to turn this software request into an approved specification, coordinated implementation plan, and verified delivery loop."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon-512.png"
+  brand_color: "#6D5EF8"
+
+policy:
+  allow_implicit_invocation: false
