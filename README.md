@@ -148,6 +148,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [brand-guidelines/](./brand-guidelines/) - Apply OpenAI/Codex brand colors and typography to artifacts.
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
+- [falsify](https://github.com/263311487-ux/falsify) - The scientific thinking protocol for Codex: falsification-first (axioms → hypothesis → adversarial test → evidence → calibrated verdict). No verdict without a falsifiable hypothesis — stops confident unverifiable answers. Ships a live browser checker, 30+ bias catalog, mental-model toolbox, and a 28-case runnable eval suite (dual-model 26/28). Install: `npx skills add 263311487-ux/falsify`
 - [image-enhancer/](./image-enhancer/) - Upscale and refine images with configurable presets.
 - [slack-gif-creator/](./slack-gif-creator/) - Generate GIFs for Slack with captions and styling.
 - [theme-factory/](./theme-factory/) - Create reusable theme tokens and palettes.
