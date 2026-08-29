@@ -142,6 +142,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
 - [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.
+- [ai-open-source-intelligence](https://github.com/zxhwolfe-dev/aiworkstation-open-source-intelligence/tree/main/skills/ai-open-source-intelligence) - Find, verify, compare, and select open-source AI projects with live Radar evidence, direct License checks, honest no-match handling, alternatives, and candidate stack planning. The complete v0.3.3 pre-release Plugin bundles the Skill with nine read-only Hosted MCP tools. Setup: [version-pinned Codex Plugin quickstart](https://github.com/zxhwolfe-dev/aiworkstation-open-source-intelligence/blob/v0.3.3/docs/QUICKSTART.md#complete-plugin-in-codex--chatgpt-desktop).
 
 ### Meta & Utilities
 
