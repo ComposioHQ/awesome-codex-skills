@@ -129,6 +129,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [diasporic-intelligence](https://github.com/MinistaJazz/diasporic-intelligence) - External repo: source-credit skill for consent-governed lineage AI with attribution, provenance, revocation, and non-impersonation boundaries.
 - [novel-writing](https://github.com/wgwtest/novel-writing) - External repo: public Codex skill for fiction planning, chapter drafting, scene continuation, and revision.
 - [tailored-resume-generator/](./tailored-resume-generator/) - Tailor resumes to job descriptions with quantified impact.
+- [topic-intelligence](https://github.com/zxhwolfe-dev/aiworkstation-topic-intelligence) - External repo: compare current creator or editorial topics from AI Workstation Global Topic Radar, or turn one into an evidence-backed brief with research questions, `must_verify`, `avoid_claims`, and visual requirements. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo zxhwolfe-dev/aiworkstation-topic-intelligence --path skills/topic-intelligence --name topic-intelligence`
 - [unslop](https://github.com/MohamedAbdallah-14/unslop) - External repo: CLI and MCP server that removes AI writing patterns from text: tricolons, em-dash overuse, hedging stacks, and sycophancy openers. Works with Codex, Claude Code, Gemini CLI, and Cursor. Five intensity levels and a lint-only audit mode.
 
 ### Data & Analysis
