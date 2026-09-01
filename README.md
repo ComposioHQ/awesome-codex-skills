@@ -141,6 +141,7 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 - [domain-name-brainstormer/](./domain-name-brainstormer/) - Brainstorm available domain names with criteria and checks.
 - [raffle-winner-picker/](./raffle-winner-picker/) - Randomly select winners with audit-friendly logs.
 - [langsmith-fetch/](./langsmith-fetch/) - Pull LangSmith project/test data for analysis.
+- [chemagent-skill](https://github.com/fungsky/chemagent-skill) - Query the self-hosted ChemAgent chemical R&D system: formulas, raw materials, GB/EU compliance, local knowledge base. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo fungsky/chemagent-skill --path skills/chemagent --name chemagent`
 - [helium-mcp/](./helium-mcp/) - Search real-time news with bias scoring, get live market data, ML options pricing, and balanced news synthesis via MCP.
 
 ### Meta & Utilities
