@@ -145,6 +145,8 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Meta & Utilities
 
+- [Codex Project Hygiene](https://github.com/kotyasmol/codex-project-hygiene) - Prevent Codex project clutter before development by installing reviewable, persistent `AGENTS.md` rules; keeps scratch and rejected media candidates outside repositories, with cleanup explicit and secondary.
+
 - [brand-guidelines/](./brand-guidelines/) - Apply OpenAI/Codex brand colors and typography to artifacts.
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
