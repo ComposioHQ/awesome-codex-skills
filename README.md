@@ -145,6 +145,9 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Meta & Utilities
 
+- [codex-history-repair](https://github.com/EyrieCommander/codex-skills/tree/master/skills/codex-history-repair) - Repair Codex Desktop tasks with missing visible history, encrypted-content failures, or broken pagination and lineage while preserving recoverable reasoning and backing up local state. Install: `npx skills add EyrieCommander/codex-skills --skill codex-history-repair`
+- [keep-codex-fast](https://github.com/EyrieCommander/codex-skills/tree/master/skills/keep-codex-fast) - Inspect and maintain heavily used Codex installations with report-first cleanup, backup-first archival, cold-session compression, and restore tooling. Install: `npx skills add EyrieCommander/codex-skills --skill keep-codex-fast`
+- [thread-workspace-relink](https://github.com/EyrieCommander/codex-skills/tree/master/skills/thread-workspace-relink) - Relink Codex tasks after a project folder moves or is renamed, changing only structured workspace paths after creating a timestamped backup. Install: `npx skills add EyrieCommander/codex-skills --skill thread-workspace-relink`
 - [brand-guidelines/](./brand-guidelines/) - Apply OpenAI/Codex brand colors and typography to artifacts.
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
