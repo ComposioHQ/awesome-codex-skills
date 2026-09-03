@@ -145,6 +145,8 @@ Codex skills are modular instruction bundles that tell Codex how to execute a ta
 
 ### Meta & Utilities
 
+- [agent-kill-switch](https://github.com/vivekchand/clawmetry/tree/main/skills/agent-kill-switch) — Give the human an off switch and a cost meter for Codex CLI and the other coding agents on the machine, via ClawMetry: see sessions and spend from the logs already on disk, stop a runaway session, hold risky tool calls for approval. Install: `python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo vivekchand/clawmetry --path skills/agent-kill-switch --name agent-kill-switch`
+
 - [brand-guidelines/](./brand-guidelines/) - Apply OpenAI/Codex brand colors and typography to artifacts.
 - [agent-deep-links/](./agent-deep-links/) - Build and validate deep links for Codex, Cursor, and VS Code with Slack-safe formatting and fallback guidance.
 - [canvas-design/](./canvas-design/) - Generate structured canvas layouts and design artifacts.
